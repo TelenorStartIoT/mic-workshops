@@ -20,7 +20,7 @@ The best part: all you have to do is send data to the platform and the rest is h
 
 ## Realtime
 
-MIC maintains a [MQTT broker](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) which is part of [AWS IoT](https://aws.amazon.com/iot/). What this means is that you can utilize a MQTT client in any language/platform (supporting X.509 certificates) for both listening on incoming data and send data downlink to your IoT devices.
+MIC uses an [MQTT broker](https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html) which is part of [AWS IoT](https://aws.amazon.com/iot/). This means that you can send data to MIC using an MQTT client in any language/platform (that supports X.509 certificates and TLS or DTLS for MQTT transport), listen (subscibe) to incoming data and send data downlink to your IoT devices from MIC. MIC also supports devices connected using NB-IoT, LTE Cat M! and LoRaWAN directly.
 
 ## Rules Engine
 
@@ -34,4 +34,4 @@ MIC provides an intuitive way to structure your IoT infrastructure. `Thing Types
 
 `Users` and `Thing Types` can be sorted under `domains`. Use `sub-domains` to create a domain-tree of which users get different access to parts of your infrastructure.
 
-These are some of the features included in the Managed IoT Cloud suite. I hope you've got an overview of what's in store. Next we'll start by setting up an IoT device.
+These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what's in store. Next we'll start by setting up an IoT device.
