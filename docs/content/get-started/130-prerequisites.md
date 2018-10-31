@@ -8,7 +8,7 @@ menu:
     identifier: Prerequisites
 ---
 
-The [Arduino MKR NB 1500](https://store.arduino.cc/arduino-mkr-nb-1500) comes fully compatible with Narrow Band IoT NB classes and LTE CAT M1 networks. In this workshop we'll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open `telenor.iot` APN over the Telenor NB-IoT network.
+The [Arduino MKR NB 1500](https://store.arduino.cc/arduino-mkr-nb-1500) comes fully compatible with Narrow Band IoT NB classes and LTE CAT M1 networks. In this workshop we'll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open `mda.ee` APN over the Telenor NB-IoT network.
 
 Before continuing, make sure that:
 
