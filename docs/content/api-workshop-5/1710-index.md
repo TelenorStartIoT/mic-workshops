@@ -9,7 +9,7 @@ It is advised to have general knowledge of how Vue.js + Vuex works before procee
 Open a clean directory and clone the working repository (if not already done):
 
 ```sh
-git clone https://github.com/Pwntus/mic-workshops.git
+git clone https://github.com/TelenorStartIoT/mic-workshops.git
 ```
 
 Next, navigate to `mic-workshops/workshops/05` and run `npm i`:

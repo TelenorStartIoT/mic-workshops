@@ -1,4 +1,4 @@
-baseURL = "https://pwntus.github.io/mic-workshops/"
+baseURL = "https://telenorstartiot.github.io/mic-workshops/"
 languageCode = "en-us"
 title = "Managed IoT Cloud Workshops"
 theme = "hugo-material-docs"

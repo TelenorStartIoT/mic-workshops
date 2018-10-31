@@ -9,7 +9,7 @@ The second workshop will focus on setting up a simple Vue.js web-app with a logi
 Open a clean directory and clone the working repository (if not already done):
 
 ```sh
-git clone https://github.com/Pwntus/mic-workshops.git
+git clone https://github.com/TelenorStartIoT/mic-workshops.git
 ```
 
 Next, navigate to `mic-workshops/workshops/04` and run `npm i`:

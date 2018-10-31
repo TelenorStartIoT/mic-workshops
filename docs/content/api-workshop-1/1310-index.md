@@ -9,7 +9,7 @@ Our first workshop will focus on creating a HTTP client with necessary configura
 Open a clean directory and clone the working repository:
 
 ```sh
-git clone https://github.com/Pwntus/mic-workshops.git
+git clone https://github.com/TelenorStartIoT/mic-workshops.git
 ```
 
 Next, navigate to `mic-workshops/workshops/01` and run `npm i`:
