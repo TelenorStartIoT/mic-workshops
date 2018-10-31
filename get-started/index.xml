@@ -37,7 +37,7 @@ There are several components, both known and unknown to most of us, when creatin
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://pwntus.github.io/mic-workshops/get-started/prerequisites/</guid>
-      <description>The Arduino MKR NB 1500 comes fully compatible with Narrow Band IoT NB classes and LTE CAT M1 networks. In this workshop we&amp;rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open telenor.iot APN over the Telenor NB-IoT network.
+      <description>The Arduino MKR NB 1500 comes fully compatible with Narrow Band IoT NB classes and LTE CAT M1 networks. In this workshop we&amp;rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open mda.ee APN over the Telenor NB-IoT network.
 Before continuing, make sure that:
  You have a valid MIC account: https://startiot.mic.telenorconnexion.com/signup You are able to login to the MIC App Board: https://startiot.</description>
     </item>
