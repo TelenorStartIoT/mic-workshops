@@ -1,0 +1,23 @@
+{{ $currentPage := . }}
+{{ range .Site.Menus.api.ByWeight }}
+  <li>
+    {{ $isSection := or ($currentPage.HasMenuCurrent "api" .) (eq $currentPage.Permalink (.URL | absURL | printf "%s")) }}
+    <a {{ if $isSection }}class="active"{{ end }} title="{{ .Name }}" href="{{ .URL | relURL}}">
+      {{ .Pre }}
+      {{ .Name }}
+    </a>
+
+    {{ if and .HasChildren $isSection }}
+      <ul>
+        {{ range .Children }}
+          <li class="anchor">
+            <a {{ if $currentPage.IsMenuCurrent "api" . }}class="active"{{ end }} title="{{ .Name }}" href="{{ .URL | relURL}}">
+              {{ .Pre }}
+              {{ .Name }}
+            </a>
+          </li>
+        {{ end }}
+      </ul>
+    {{ end }}
+  </li>
+{{ end }}

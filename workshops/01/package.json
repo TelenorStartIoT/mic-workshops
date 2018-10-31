@@ -1,0 +1,22 @@
+{
+  "name": "workshop-01",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pwntus/mic-workshops.git"
+  },
+  "author": "Pontus Aurdal <pontus.edvard@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pwntus/mic-workshops/issues"
+  },
+  "homepage": "https://github.com/Pwntus/mic-workshops#readme",
+  "dependencies": {
+    "axios": "^0.18.0"
+  }
+}
