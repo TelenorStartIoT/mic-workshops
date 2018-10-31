@@ -43,7 +43,7 @@ publishDir="../public"
 [social]
   twitter = ""
   github  = "pwntus"
-  repo    = "pwntus/mic-workshops"
+  repo    = "TelenorStartIoT/mic-workshops"
   email   = "pontus.edvard@gmail.com"
 
 
