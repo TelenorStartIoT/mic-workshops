@@ -374,7 +374,7 @@
 
 <h2 id="realtime">Realtime</h2>
 
-<p>MIC maintains a <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html">MQTT broker</a> which is part of <a href="https://aws.amazon.com/iot/">AWS IoT</a>. What this means is that you can utilize a MQTT client in any language/platform (supporting X.509 certificates) for both listening on incoming data and send data downlink to your IoT devices.</p>
+<p>MIC uses an <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html">MQTT broker</a> which is part of <a href="https://aws.amazon.com/iot/">AWS IoT</a>. This means that you can send data to MIC using an MQTT client in any language/platform (that supports X.509 certificates and TLS or DTLS for MQTT transport), listen (subscibe) to incoming data and send data downlink to your IoT devices from MIC. MIC also supports devices connected using NB-IoT, LTE Cat M! and LoRaWAN directly.</p>
 
 <h2 id="rules-engine">Rules Engine</h2>
 
@@ -388,7 +388,7 @@
 
 <p><code>Users</code> and <code>Thing Types</code> can be sorted under <code>domains</code>. Use <code>sub-domains</code> to create a domain-tree of which users get different access to parts of your infrastructure.</p>
 
-<p>These are some of the features included in the Managed IoT Cloud suite. I hope you&rsquo;ve got an overview of what&rsquo;s in store. Next we&rsquo;ll start by setting up an IoT device.</p>
+<p>These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what&rsquo;s in store. Next we&rsquo;ll start by setting up an IoT device.</p>
 
 
       <aside class="copyright" role="note">
