@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api-workshop-5s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/api-workshop-5/</link>
+    <description>Recent content in Api-workshop-5s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/api-workshop-5/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 5: Vue.js Cont.</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-5/</guid>
+      <description>It is advised to have general knowledge of how Vue.js + Vuex works before proceeding.
+Open a clean directory and clone the working repository (if not already done):
+git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/05 and run npm i:
+cd mic-workshops/workshops/05 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.
+Under Construction
+Please wait&amp;hellip;
+ </description>
+    </item>
+    
+  </channel>
+</rss>

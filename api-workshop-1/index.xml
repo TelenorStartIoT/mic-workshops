@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api-workshop-1s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/api-workshop-1/</link>
+    <description>Recent content in Api-workshop-1s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/api-workshop-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 1: Create an API Client</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/</guid>
+      <description>Our first workshop will focus on creating a HTTP client with necessary configurations to make both unauthenticated and authenticated requests.
+Open a clean directory and clone the working repository:
+git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/01 and run npm i:
+cd mic-workshops/workshops/01 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
+    </item>
+    
+    <item>
+      <title>Configure</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/configure/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/configure/</guid>
+      <description>You should now have a clone of a stub project where we will continue to write code for our first API request.
+Open index.js. You should see the following content:
+// mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;&#39; const API_KEY = &#39;&#39; const USERNAME = &#39;&#39; const PASSWORD = &#39;&#39; // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { // Implement me!</description>
+    </item>
+    
+    <item>
+      <title>First API call</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/first-api-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/first-api-call/</guid>
+      <description>We now have the necessary info to make our first unauthenticated API call. The next step is to authenticate with a username/password combination.
+Auth API You can find the full documentation on the Auth API here. The Auth API has multiple endpoints but we&amp;rsquo;ll use the LOGIN endpoint. To login we need to send a POST request to the API endpoint /auth/login.
+Continue by adding code to index.js for our request:</description>
+    </item>
+    
+    <item>
+      <title>Complete Code</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/complete-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/complete-code/</guid>
+      <description>// mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;https://xxxxxxxxxx.execute-api.xx-xxxx-x.amazonaws.com/prod&#39; const API_KEY = &#39;&amp;lt; API key &amp;gt;&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { try { // Make a Auth API POST request to the /auth/login endpoint const response = await api({ method: &#39;post&#39;, url: &#39;/auth/login&#39;, // Add a username/password combination as payload data: { userName: USERNAME, password: PASSWORD } }) console.</description>
+    </item>
+    
+    <item>
+      <title>Authenticate API Call</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</guid>
+      <description>All other API endpoints except for /auth/ and /metadata requires a logged in user. As we saw in the previous page, we called /auth/login. The response after a successful login contains a credentials object with three properties; identityId, token and refreshToken.
+Example response:
+{ &amp;quot;credentials&amp;quot;: { &amp;quot;identityId&amp;quot;: &amp;quot;eu-west-1:72ty9374-29ko-1293-384y-4g66u87f3hfe&amp;quot;, &amp;quot;token&amp;quot;: &amp;quot;nkiOiJNeSIsImN1c3Rvb&amp;quot;, &amp;quot;refreshToken&amp;quot;: &amp;quot;DnTY4m2lpDPb3BjG&amp;quot; } }  This object needs to be stored locally by the API consumer in order to remove the need to login before every request.</description>
+    </item>
+    
+    <item>
+      <title>Final Code</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/final-code/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/final-code/</guid>
+      <description>// mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;https://xxxxxxxxxx.execute-api.xx-xxxx-x.amazonaws.com/prod&#39; const API_KEY = &#39;&amp;lt; API key&amp;gt;&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; let API_CREDENTIALS = null // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { try { // Make a Auth API POST request to the /auth/login endpoint const response = await api({ method: &#39;post&#39;, url: &#39;/auth/login&#39;, // Add a username/password combination as payload data: { userName: USERNAME, password: PASSWORD } }) // Store login credentials for later usage API_CREDENTIALS = response.</description>
+    </item>
+    
+  </channel>
+</rss>

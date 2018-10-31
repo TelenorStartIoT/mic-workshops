@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Api-workshop-2s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/api-workshop-2/</link>
+    <description>Recent content in Api-workshop-2s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/api-workshop-2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 2: Use the API</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/</guid>
+      <description>During the first workshop we setup a simple HTTP client with the necessary configuration for making both unauthenticated and authenticated API calls. During the second workshop, we&amp;rsquo;ll focus on actually making some API calls.
+Open a clean directory and clone the working repository (if not already done):
+git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/02 and run npm i:
+cd mic-workshops/workshops/02 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
+    </item>
+    
+    <item>
+      <title>Login</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/login/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/login/</guid>
+      <description>Included in this code stub is a api.class.js file containing a class performing the steps we&amp;rsquo;ve covered in the previous workshop.
+Open index.js. Include the API class and instantiate a new API object:
+// mic-workshops/workshops/02/index.js const API = require(&#39;./api.class.js&#39;) const myApi = new API(&#39;&amp;lt; API key &amp;gt;&#39;)  Login The API class has already setup the base URL and API key for us. It also exposes a login() method we&amp;rsquo;ll use to authenticate a user.</description>
+    </item>
+    
+    <item>
+      <title>List Thing Types</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/list-thing-types/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/list-thing-types/</guid>
+      <description>We&amp;rsquo;ve now logged in a user using the login() method of the included API class. This included API class also exposes a invoke() method we can use to call the API with the necessary headers included after we&amp;rsquo;ve logged in.
+Next we&amp;rsquo;ll list all Thing Types available to our currently authorized user. We&amp;rsquo;ll use the Thing Type LIST endpoint to get a list of all Thing Types. This is simply done by sending a GET method to /thingtypes.</description>
+    </item>
+    
+    <item>
+      <title>Get Thing Type Info</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</guid>
+      <description>After we&amp;rsquo;ve listed all available Thing Types we will continue to query information about a specific Thing Type.
+We&amp;rsquo;ll use the Thing Type GET endpoint to get information about a specific Thing Type. This is done by sending a GET method to /thingtypes/{id} with a Thing Type ID as query parameter.
+   Thing Type GET      Method GET   Endpoint /thingtypes/{id}   {id} The ID of the Thing Type to get, set in query path    Continue to add code after our login() call, using the invoke() method.</description>
+    </item>
+    
+    <item>
+      <title>Find Things</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/find-things/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/find-things/</guid>
+      <description>We&amp;rsquo;ll now find all Things attached to a specific Thing Type.
+We&amp;rsquo;ll use the Thing Management FIND endpoint. This is done by sending a POST method to /things/find with an Elasticsearch query as payload.
+   Thing Management FIND      Method POST   Endpoint /things/find   Body The query to run on Elasticsearch specified using Elasticsearch Query DSL    Continue to add code after our login() call, using the invoke() method.</description>
+    </item>
+    
+    <item>
+      <title>Observe a Thing</title>
+      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/observe-a-thing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/observe-a-thing/</guid>
+      <description>Similarily to finding Things, we&amp;rsquo;ll now use the Observation API to find or &amp;ldquo;observe&amp;rdquo; historical data reported by Things.
+We&amp;rsquo;ll use the Observation FIND endpoint. This is done by sending a POST method to /observations/find with an Elasticsearch query as payload.
+   Observation FIND      Method POST   Endpoint /observations/find   Body The query to run on Elasticsearch specified using Elasticsearch Query DSL    Continue to add code after our login() call, using the invoke() method.</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Get-starteds on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/get-started/</link>
+    <description>Recent content in Get-starteds on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/get-started/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Get Started</title>
+      <link>https://pwntus.github.io/mic-workshops/get-started/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/get-started/</guid>
+      <description>This section will explain why the Managed IoT Cloud platform (short: MIC) is a powerful tool for managing your IoT infrastructure and why you should consider using it for your projects.
+We&amp;rsquo;ll start with a quick background about the MIC platform and who operates it to get you oriented.
+Telenor Connexion: Development Telenor Connexion is a branch in the Telenor company with its headquarters in Stockholm, Sweden. Telenor Connexion focuses on tailored IoT solutions and maintains the MIC platform.</description>
+    </item>
+    
+    <item>
+      <title>Why use MIC</title>
+      <link>https://pwntus.github.io/mic-workshops/get-started/why-use-mic/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/get-started/why-use-mic/</guid>
+      <description>You&amp;rsquo;re probably wondering &amp;ldquo;what does MIC has to offer for me?&amp;rdquo;.
+There are several components, both known and unknown to most of us, when creating a full-blown IoT infrastructure. It&amp;rsquo;s easy to say &amp;ldquo;I&amp;rsquo;ll just spin up a SQL database and pipe all my data to it&amp;rdquo;, but how will you connect your IoT devices through LoRaWAN / NB-IoT, handle realtime updates, structure a fleet of e.g. 100+ IoT devices and query gigabytes of data stored years ago?</description>
+    </item>
+    
+    <item>
+      <title>Prerequisites</title>
+      <link>https://pwntus.github.io/mic-workshops/get-started/prerequisites/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/get-started/prerequisites/</guid>
+      <description>The Arduino MKR NB 1500 comes fully compatible with Narrow Band IoT NB classes and LTE CAT M1 networks. In this workshop we&amp;rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open telenor.iot APN over the Telenor NB-IoT network.
+Before continuing, make sure that:
+ You have a valid MIC account: https://startiot.mic.telenorconnexion.com/signup You are able to login to the MIC App Board: https://startiot.</description>
+    </item>
+    
+  </channel>
+</rss>

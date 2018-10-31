@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop-4s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/workshop-4/</link>
+    <description>Recent content in Workshop-4s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/workshop-4/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 4: Program the Device</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-4/</guid>
+      <description>With your Arduino IDE setup for the Arduino MKR NB 1500, create a new sketch.</description>
+    </item>
+    
+    <item>
+      <title>Initialize</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/initialize/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/initialize/</guid>
+      <description>In your new sketch, enter the following code:
+#include &amp;lt;MKRNB.h&amp;gt; #include &amp;lt;Modem.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; // Please enter your sensitive data in the Secret tab or arduino_secrets.h // PIN Number const char PINNUMBER[] = &amp;quot;&amp;quot;; unsigned int MICUdpPort = 1234; // local port to listen for UDP packets IPAddress MIC_IP(172, 16, 15, 14); // Initialize the library instance NBClient client; GPRS gprs; NB nbAccess; NBModem modemTest; String IMSI = &amp;quot;&amp;quot;; String printOut = &amp;quot;&amp;quot;; byte packetBuffer[512]; // A UDP instance to let us send and receive packets over UDP NBUDP Udp;  Setup Continue by adding the following code inside the setup() section:</description>
+    </item>
+    
+    <item>
+      <title>Loop</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/loop/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/loop/</guid>
+      <description>Continue by adding the following code inside the loop() section:
+void loop() { int size = 0; Serial.print(&amp;quot;Send packet to MIC: &amp;quot;); sendMICUDPpacket(MIC_IP); Serial.println(&amp;quot;Check if we have received something..&amp;quot;); size = receiveMICUDPpacket(); if (size &amp;gt; 0) { Serial.println(&amp;quot;Received packet...&amp;quot;); String bufferString = String((char *) packetBuffer); Serial.println(&amp;quot;Packet data is: &amp;lt;&amp;quot; + bufferString + &amp;quot;&amp;gt;&amp;quot;); } else { Serial.println(&amp;quot;No data received...&amp;quot;); } // Wait 30 seconds before Sending again Serial.println(&amp;quot;Wait 30s before sending again.</description>
+    </item>
+    
+    <item>
+      <title>Receive Packet</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/receive/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/receive/</guid>
+      <description>Implement the receiveMICUDPpacket() function:
+int receiveMICUDPpacket() { int size = 0; size = Udp.parsePacket(); // Check if size is larger than 0, if yes we have received something if ( size &amp;gt; 0) { Serial.println(&amp;quot;packet received&amp;quot;); // We&#39;ve received a packet, read the data from it Udp.read(packetBuffer, size); // read the packet into the buffer return(size); } }  </description>
+    </item>
+    
+    <item>
+      <title>Send Packet</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/send/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/send/</guid>
+      <description>Implement the sendMICUDPpacket() function:
+unsigned long sendMICUDPpacket(IPAddress&amp;amp; address) { String p1, p2, p3, p4, payload = &amp;quot;&amp;quot;; String comma = &amp;quot;,&amp;quot;; float hum, tmp, r = 0.0; p1 = &amp;quot;Hello&amp;quot;; hum = 24; r = random(0, 9); r = r / 10; hum = hum + r; p2 = hum; tmp = 20; r = random(0, 9); r = r / 10; tmp = tmp + r; p3 = tmp; payload = p1 + comma + p2 + comma + p3; Serial.</description>
+    </item>
+    
+  </channel>
+</rss>

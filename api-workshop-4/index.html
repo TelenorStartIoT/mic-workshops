@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+  
+  
+  
+  
+   <html class="no-js"> 
+
+  <head lang="en-us">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=10" />
+    <title>Workshop 4: Vue.js - Managed IoT Cloud Workshops</title>
+    <meta name="generator" content="Hugo 0.40.1" />
+
+    
+    <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
+    
+    <link rel="canonical" href="https://pwntus.github.io/mic-workshops/api-workshop-4/">
+    
+    <meta name="author" content="Pontus Edvard Aurdal">
+    
+
+    <meta property="og:url" content="https://pwntus.github.io/mic-workshops/api-workshop-4/">
+    <meta property="og:title" content="Managed IoT Cloud Workshops">
+    <meta property="og:image" content="https://pwntus.github.io/mic-workshops/images/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Managed IoT Cloud Workshops">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+    <link rel="shortcut icon" type="image/x-icon" href="https://pwntus.github.io/mic-workshops/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="https://pwntus.github.io/mic-workshops/images/favicon.ico">
+
+    <style>
+      @font-face {
+        font-family: 'Icon';
+        src: url('https://pwntus.github.io/mic-workshops/fonts/icon.eot');
+        src: url('https://pwntus.github.io/mic-workshops/fonts/icon.eot')
+               format('embedded-opentype'),
+             url('https://pwntus.github.io/mic-workshops/fonts/icon.woff')
+               format('woff'),
+             url('https://pwntus.github.io/mic-workshops/fonts/icon.ttf')
+               format('truetype'),
+             url('https://pwntus.github.io/mic-workshops/fonts/icon.svg')
+               format('svg');
+        font-weight: normal;
+        font-style: normal;
+      }
+    </style>
+
+    <link rel="stylesheet" href="https://pwntus.github.io/mic-workshops/stylesheets/application.css">
+    <link rel="stylesheet" href="https://pwntus.github.io/mic-workshops/stylesheets/temporary.css">
+    <link rel="stylesheet" href="https://pwntus.github.io/mic-workshops/stylesheets/palettes.css">
+    <link rel="stylesheet" href="https://pwntus.github.io/mic-workshops/stylesheets/highlight/highlight.css">
+
+    
+    
+    
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu&#43;Mono">
+    <style>
+      body, input {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+      }
+      pre, code {
+        font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+      }
+    </style>
+
+    
+    <link rel="stylesheet" href="https://pwntus.github.io/mic-workshops/stylesheets/custom.css">
+    
+    <script src="https://pwntus.github.io/mic-workshops/javascripts/modernizr.js"></script>
+
+    
+
+  </head>
+  <body class="palette-primary-#47abe2 palette-accent-#af3269">
+
+
+
+
+<div class="backdrop">
+  <div class="backdrop-paper"></div>
+</div>
+
+<input class="toggle" type="checkbox" id="toggle-drawer">
+<input class="toggle" type="checkbox" id="toggle-search">
+<label class="toggle-button overlay" for="toggle-drawer"></label>
+
+<header class="header">
+  <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        Workshop 4: Vue.js
+      </div>
+    </div>
+
+    
+
+    
+    <div class="button button-github" role="button" aria-label="GitHub">
+      <a href="https://github.com/pwntus/mic-workshops" title="@pwntus/mic-workshops on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+    </div>
+    
+    
+        
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+
+</header>
+
+<main class="main">
+  <div class="drawer">
+    <nav aria-label="Navigation">
+  <a href="https://pwntus.github.io/mic-workshops/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="https://pwntus.github.io/mic-workshops/images/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>Managed IoT Cloud Workshops </strong>
+        
+      </div>
+    </div>
+  </a>
+
+  <div class="scrollable">
+    <div class="wrapper">
+      
+
+      <div class="toc">
+        
+        <ul>
+          
+
+  <li>
+    
+    <a  title="Get Started" href="https://pwntus.github.io/mic-workshops/get-started/">
+      
+      Get Started
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 1: Arduino IDE" href="https://pwntus.github.io/mic-workshops/workshop-1/">
+      
+      Workshop 1: Arduino IDE
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 2: IMSI and IMEI" href="https://pwntus.github.io/mic-workshops/workshop-2/">
+      
+      Workshop 2: IMSI and IMEI
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 3: Provision a Device" href="https://pwntus.github.io/mic-workshops/workshop-3/">
+      
+      Workshop 3: Provision a Device
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 4: Program the Device" href="https://pwntus.github.io/mic-workshops/workshop-4/">
+      
+      Workshop 4: Program the Device
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 5: Uplink Transform" href="https://pwntus.github.io/mic-workshops/workshop-5/">
+      
+      Workshop 5: Uplink Transform
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 6: App Board" href="https://pwntus.github.io/mic-workshops/workshop-6/">
+      
+      Workshop 6: App Board
+    </a>
+
+    
+  </li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">API Workshops</span>
+        <ul>
+          
+
+  <li>
+    
+    <a  title="Get Started with the API" href="https://pwntus.github.io/mic-workshops/api-get-started/">
+      
+      Get Started with the API
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Manifest" href="https://pwntus.github.io/mic-workshops/manifest/">
+      
+      Manifest
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 1: Create an API Client" href="https://pwntus.github.io/mic-workshops/api-workshop-1/">
+      
+      Workshop 1: Create an API Client
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 2: Use the API" href="https://pwntus.github.io/mic-workshops/api-workshop-2/">
+      
+      Workshop 2: Use the API
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 3: MQTT Realtime" href="https://pwntus.github.io/mic-workshops/api-workshop-3/">
+      
+      Workshop 3: MQTT Realtime
+    </a>
+
+    
+  </li>
+
+  <li>
+    
+    <a class="active" title="Workshop 4: Vue.js" href="https://pwntus.github.io/mic-workshops/api-workshop-4/">
+      
+      Workshop 4: Vue.js
+    </a>
+
+    
+      <ul>
+        
+          <li class="anchor">
+            <a  title="Vuex" href="https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/">
+              
+              Vuex
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Create a Login Form" href="https://pwntus.github.io/mic-workshops/api-workshop-4/create-a-login-form/">
+              
+              Create a Login Form
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Logout" href="https://pwntus.github.io/mic-workshops/api-workshop-4/logout/">
+              
+              Logout
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Final Code" href="https://pwntus.github.io/mic-workshops/api-workshop-4/final-code/">
+              
+              Final Code
+            </a>
+          </li>
+        
+      </ul>
+    
+  </li>
+
+  <li>
+    
+    <a  title="Workshop 5: Vue.js Cont." href="https://pwntus.github.io/mic-workshops/api-workshop-5/">
+      
+      Workshop 5: Vue.js Cont.
+    </a>
+
+    
+  </li>
+
+
+        </ul>
+        
+
+        
+        <hr>
+        <span class="section">The author</span>
+        
+        <ul>
+          
+
+          
+          <li>
+            <a href="https://github.com/pwntus" target="_blank" title="@pwntus on GitHub">
+              @pwntus on GitHub
+            </a>
+          </li>
+          
+
+          
+          <li>
+            <a href="mailto:pontus.edvard@gmail.com" title="Email of pontus.edvard@gmail.com">
+              Contact via email
+            </a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+
+  </div>
+
+  <article class="article">
+    <div class="wrapper">
+      <h1>Workshop 4: Vue.js </h1>
+
+      <p>The second workshop will focus on setting up a simple Vue.js web-app with a login form for a user to authenticate.</p>
+
+<p>Open a clean directory and clone the working repository (if not already done):</p>
+
+<pre><code class="language-sh">git clone https://github.com/Pwntus/mic-workshops.git
+</code></pre>
+
+<p>Next, navigate to <code>mic-workshops/workshops/04</code> and run <code>npm i</code>:</p>
+
+<pre><code class="language-sh">cd mic-workshops/workshops/04 &amp;&amp; npm i
+</code></pre>
+
+<p>Wait for it to complete before continuing.</p>
+
+
+      <aside class="copyright" role="note">
+        
+      </aside>
+
+      <footer class="footer">
+        
+
+<nav class="pagination" aria-label="Footer">
+  <div class="previous">
+  
+      <a href="https://pwntus.github.io/mic-workshops/api-workshop-3/final-code/" title="Final Code">
+        <span class="direction">
+          Previous
+        </span>
+        <div class="page">
+          <div class="button button-previous" role="button" aria-label="Previous">
+            <i class="icon icon-back"></i>
+          </div>
+          <div class="stretch">
+            <div class="title">
+              Final Code
+            </div>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+
+  <div class="next">
+  
+      <a href="https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/" title="Vuex">
+        <span class="direction">
+          Next
+        </span>
+        <div class="page">
+          <div class="stretch">
+            <div class="title">
+              Vuex
+            </div>
+          </div>
+          <div class="button button-next" role="button" aria-label="Next">
+            <i class="icon icon-forward"></i>
+          </div>
+        </div>
+      </a>
+  
+  </div>
+</nav>
+
+
+
+
+
+      </footer>
+    </div>
+  </article>
+
+  <div class="results" role="status" aria-live="polite">
+    <div class="scrollable">
+      <div class="wrapper">
+        <div class="meta"></div>
+        <div class="list"></div>
+      </div>
+    </div>
+  </div>
+</main>
+
+    <script>
+    
+      var base_url = '';
+      var repo_id  = '';
+    
+    </script>
+
+    <script src="https://pwntus.github.io/mic-workshops/javascripts/application.js"></script>
+    
+
+    <script>
+      /* Add permanent link next to the headers */
+      var headers = document.querySelectorAll("h1, h2, h3, h4, h5, h6");
+
+      for(var i = 0; i < headers.length; i++) {
+          var a = document.createElement("a");
+          a.setAttribute("class", "headerlink");
+          a.setAttribute("href", "#" + headers[i].id);
+          a.setAttribute("title", "Permanent link")
+          a.innerHTML = "#";
+          headers[i].appendChild(a);
+      }
+    </script>
+
+    
+
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+  </body>
+</html>
+

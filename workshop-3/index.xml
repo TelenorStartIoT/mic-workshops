@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop-3s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/workshop-3/</link>
+    <description>Recent content in Workshop-3s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/workshop-3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 3: Provision a Device</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/</guid>
+      <description>We&amp;rsquo;ll start by provision a device, called a Thing in MIC, which will represent our device in the physical world.</description>
+    </item>
+    
+    <item>
+      <title>Create Thing Type</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/new-thing-type/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/new-thing-type/</guid>
+      <description>To do so, login to the App Board and click on the NEW THING TYPE button in the top left corner:
+Give your Thing Type a Label, Description and a Domain and click SAVE.</description>
+    </item>
+    
+    <item>
+      <title>Create Thing</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-3/new-thing/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-3/new-thing/</guid>
+      <description>Click on your new Thing Type that has appeared in the list. You will now see the Thing Type dashboard.
+To create a new Thing, click on the THINGS button in the top right corner.
+Give the Thing a Name and a Domain, select protocol nbiot and insert IMSI and IMEI (from the previous workshop). Then click CREATE.
+When your device sends data, you&amp;rsquo;ll be able to view it in a dashboard, but first, follow the next steps to program your device.</description>
+    </item>
+    
+  </channel>
+</rss>

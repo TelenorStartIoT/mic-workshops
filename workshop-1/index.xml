@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Workshop-1s on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/workshop-1/</link>
+    <description>Recent content in Workshop-1s on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/workshop-1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Workshop 1: Arduino IDE</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-1/</guid>
+      <description>The Arduino IDE (Integrated Development Environment) is used to easily write code and upload it to a board. This workshop will guide you through how to setup the IDE for the Arduino MKR NB 1500 board we&amp;rsquo;ll be using during future workshops.
+Download the latest Arduino IDE version for your platform and install.</description>
+    </item>
+    
+    <item>
+      <title>Add Board Support</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-1/board-support/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-1/board-support/</guid>
+      <description> Open Arduino IDE and go to Tools ⟶ Board ⟶ Boards Manager. Search for and install Arduino SAMD (32-bits ARM Cortex-M0+) Boards. Close the IDE.  </description>
+    </item>
+    
+    <item>
+      <title>Install Pre-Release Core</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-1/install-pre-core/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-1/install-pre-core/</guid>
+      <description>In order to install the pre-release core, you need to decompress the supplied ArduinoCore-samd-newboards.zip in the hardware section of your sketchbook folder.
+Sketchbook Folder Location
+ Windows: This PC\Documents\Arduino Mac: $HOME/Documents/Arduino GNU/Linux: $HOME/Arduino    Create a new folder hardware/arduino-new in your sketchbook folder. If neither the hardware nor arduino-new folder exists, create them. Uncompress the contents of ArduinoCore-samd-newboards.zip in the previously created folder. Rename the uncompressed folder samd.   Open the Arduino IDE and go to Boards Manager to reload the index.</description>
+    </item>
+    
+    <item>
+      <title>Include MKR NB IoT Library</title>
+      <link>https://pwntus.github.io/mic-workshops/workshop-1/include-lib/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/workshop-1/include-lib/</guid>
+      <description>Open Arduino IDE and go to Sketch ⟶ Include Library ⟶ Add .ZIP Library&amp;hellip; Search for and select the MKRNBIoT-library.zip  You now have everything you need to program the Arduino MKR NB 1500 board!</description>
+    </item>
+    
+  </channel>
+</rss>

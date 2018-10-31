@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Manifests on Managed IoT Cloud Workshops</title>
+    <link>https://pwntus.github.io/mic-workshops/manifest/</link>
+    <description>Recent content in Manifests on Managed IoT Cloud Workshops</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="https://pwntus.github.io/mic-workshops/manifest/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Manifest</title>
+      <link>https://pwntus.github.io/mic-workshops/manifest/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://pwntus.github.io/mic-workshops/manifest/</guid>
+      <description>Managed IoT Cloud (MIC) is always deployed as a stack of services running on AWS. This means that for each stack, there will always be non-static variables such as API keys and endpoints. MIC utilizes AWS Lambda functions for business logic. This is what&amp;rsquo;s called a &amp;ldquo;serveless stack&amp;rdquo;, since there are no traditional servers involved. Each each of these Lambdas has a unique identifier. So how do an aplication keep track of all these endpoints and configurations that are different for each stack?</description>
+    </item>
+    
+  </channel>
+</rss>
