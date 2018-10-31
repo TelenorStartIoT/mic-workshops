@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Managed IoT Cloud Workshops</title>
-    <link>https://pwntus.github.io/mic-workshops/</link>
+    <link>https://telenorstartiot.github.io/mic-workshops/</link>
     <description>Recent content on Managed IoT Cloud Workshops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://pwntus.github.io/mic-workshops/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://telenorstartiot.github.io/mic-workshops/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Get Started</title>
-      <link>https://pwntus.github.io/mic-workshops/get-started/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/get-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/get-started/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/get-started/</guid>
       <description>This section will explain why the Managed IoT Cloud platform (MIC) is a powerful tool for managing your IoT infrastructure and why you should consider using it for your projects.
 We&amp;rsquo;ll start with a quick background about the MIC platform and who operates it to get you oriented.
 Telenor Connexion: Platform Development and Commercial offering Telenor Connexion is a branch in the Telenor company with its headquarters in Stockholm, Sweden.</description>
@@ -23,20 +23,20 @@ Telenor Connexion: Platform Development and Commercial offering Telenor Connexio
     
     <item>
       <title>Why use MIC</title>
-      <link>https://pwntus.github.io/mic-workshops/get-started/why-use-mic/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/get-started/why-use-mic/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/</guid>
       <description>You&amp;rsquo;re probably wondering &amp;ldquo;what does MIC has to offer for me?&amp;rdquo;.
 There are several components, both known and unknown to most of us, when creating a full-blown IoT infrastructure. It&amp;rsquo;s easy to say &amp;ldquo;I&amp;rsquo;ll just spin up a SQL database and pipe all my data to it&amp;rdquo;, but how will you connect your IoT devices through LoRaWAN / NB-IoT, handle realtime updates, structure a fleet of e.g. 100+ IoT devices and query gigabytes of data stored years ago?</description>
     </item>
     
     <item>
       <title>Prerequisites</title>
-      <link>https://pwntus.github.io/mic-workshops/get-started/prerequisites/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/get-started/prerequisites/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/</guid>
       <description>The Arduino MKR NB 1500 is fully compatible with Telenor Norways Narrow Band IoT (NB-IoT) and LTE CAT M1 networks. In this workshop we&amp;rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open mda.ee APN over the Telenor NB-IoT network.
 Before continuing, make sure that:
  You have access to a valid MIC account (if you are attending an event, an account will be announced for you during the event) or go here to create one:  https://startiot.</description>
@@ -44,29 +44,29 @@ Before continuing, make sure that:
     
     <item>
       <title>Workshop 1: Arduino IDE</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-1/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-1/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-1/</guid>
       <description>The Arduino IDE (Integrated Development Environment) is used to easily write code and upload it to a board. This workshop will guide you through how to setup the IDE for the Arduino MKR NB 1500 board we&amp;rsquo;ll be using during future workshops.
 Download the latest Arduino IDE version for your platform and install.</description>
     </item>
     
     <item>
       <title>Add Board Support</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-1/board-support/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/board-support/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-1/board-support/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-1/board-support/</guid>
       <description> Open Arduino IDE and go to Tools ⟶ Board ⟶ Boards Manager. Search for and install Arduino SAMD (32-bits ARM Cortex-M0+) Boards. Close the IDE.  </description>
     </item>
     
     <item>
       <title>Install Pre-Release Core</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-1/install-pre-core/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/install-pre-core/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-1/install-pre-core/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-1/install-pre-core/</guid>
       <description>In order to install the pre-release core, you need to decompress the supplied ArduinoCore-samd-newboards.zip in the hardware section of your sketchbook folder.
 Sketchbook Folder Location
  Windows: This PC\Documents\Arduino Mac: $HOME/Documents/Arduino GNU/Linux: $HOME/Arduino    Create a new folder hardware/arduino-new in your sketchbook folder. If neither the hardware nor arduino-new folder exists, create them. Uncompress the contents of ArduinoCore-samd-newboards.zip in the previously created folder. Rename the uncompressed folder samd.   Open the Arduino IDE and go to Boards Manager to reload the index.</description>
@@ -74,19 +74,19 @@ Sketchbook Folder Location
     
     <item>
       <title>Include MKR NB IoT Library</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-1/include-lib/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/include-lib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-1/include-lib/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-1/include-lib/</guid>
       <description>Open Arduino IDE and go to Sketch ⟶ Include Library ⟶ Add .ZIP Library&amp;hellip; Search for and select the MKRNBIoT-library.zip  You now have everything you need to program the Arduino MKR NB 1500 board!</description>
     </item>
     
     <item>
       <title>Workshop 2: IMSI and IMEI</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-2/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-2/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-2/</guid>
       <description>The next step is to load a sketch that allows you to send AT (attention) commands directly to the modem on the board.
 Load the following sketch and upload it to your device.
 // baud rate used for both Serial ports unsigned long baud = 115200; void setup() { // reset the ublox module pinMode(SARA_RESETN, OUTPUT); digitalWrite(SARA_RESETN, HIGH); delay(100); digitalWrite(SARA_RESETN, LOW); Serial.begin(baud); SerialSARA.begin(baud); } void loop() { if (Serial.available()) { SerialSARA.</description>
@@ -94,29 +94,29 @@ Load the following sketch and upload it to your device.
     
     <item>
       <title>Workshop 3: Provision a Device</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/</guid>
       <description>We&amp;rsquo;ll start by provision a device, called a Thing in MIC, which will represent our device in the physical world.</description>
     </item>
     
     <item>
       <title>Create Thing Type</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/new-thing-type/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/new-thing-type/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/new-thing-type/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/new-thing-type/</guid>
       <description>To do so, login to the App Board and click on the NEW THING TYPE button in the top left corner:
 Give your Thing Type a Label, Description and a Domain and click SAVE.</description>
     </item>
     
     <item>
       <title>Create Thing</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/new-thing/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/new-thing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/new-thing/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/new-thing/</guid>
       <description>Click on your new Thing Type that has appeared in the list. You will now see the Thing Type dashboard.
 To create a new Thing, click on the THINGS button in the top right corner.
 Give the Thing a Name and a Domain, select protocol nbiot and insert IMSI and IMEI (from the previous workshop). Then click CREATE.
@@ -125,59 +125,59 @@ When your device sends data, you&amp;rsquo;ll be able to view it in a dashboard,
     
     <item>
       <title>Workshop 4: Program the Device</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-4/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-4/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-4/</guid>
       <description>With your Arduino IDE setup for the Arduino MKR NB 1500, create a new sketch.</description>
     </item>
     
     <item>
       <title>Initialize</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/initialize/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/initialize/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/initialize/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/initialize/</guid>
       <description>In your new sketch, enter the following code:
 #include &amp;lt;MKRNB.h&amp;gt; #include &amp;lt;Modem.h&amp;gt; #include &amp;lt;stdio.h&amp;gt; // Please enter your sensitive data in the Secret tab or arduino_secrets.h // PIN Number const char PINNUMBER[] = &amp;quot;&amp;quot;; unsigned int MICUdpPort = 1234; // local port to listen for UDP packets IPAddress MIC_IP(172, 16, 15, 14); // Initialize the library instance NBClient client; GPRS gprs; NB nbAccess; NBModem modemTest; String IMSI = &amp;quot;&amp;quot;; String printOut = &amp;quot;&amp;quot;; byte packetBuffer[512]; // A UDP instance to let us send and receive packets over UDP NBUDP Udp;  Setup Continue by adding the following code inside the setup() section:</description>
     </item>
     
     <item>
       <title>Loop</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/loop/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/loop/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/loop/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/loop/</guid>
       <description>Continue by adding the following code inside the loop() section:
 void loop() { int size = 0; Serial.print(&amp;quot;Send packet to MIC: &amp;quot;); sendMICUDPpacket(MIC_IP); Serial.println(&amp;quot;Check if we have received something..&amp;quot;); size = receiveMICUDPpacket(); if (size &amp;gt; 0) { Serial.println(&amp;quot;Received packet...&amp;quot;); String bufferString = String((char *) packetBuffer); Serial.println(&amp;quot;Packet data is: &amp;lt;&amp;quot; + bufferString + &amp;quot;&amp;gt;&amp;quot;); } else { Serial.println(&amp;quot;No data received...&amp;quot;); } // Wait 30 seconds before Sending again Serial.println(&amp;quot;Wait 30s before sending again.</description>
     </item>
     
     <item>
       <title>Receive Packet</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/receive/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/receive/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/receive/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/receive/</guid>
       <description>Implement the receiveMICUDPpacket() function:
 int receiveMICUDPpacket() { int size = 0; size = Udp.parsePacket(); // Check if size is larger than 0, if yes we have received something if ( size &amp;gt; 0) { Serial.println(&amp;quot;packet received&amp;quot;); // We&#39;ve received a packet, read the data from it Udp.read(packetBuffer, size); // read the packet into the buffer return(size); } }  </description>
     </item>
     
     <item>
       <title>Send Packet</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-3/send/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/send/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-3/send/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/send/</guid>
       <description>Implement the sendMICUDPpacket() function:
 unsigned long sendMICUDPpacket(IPAddress&amp;amp; address) { String p1, p2, p3, p4, payload = &amp;quot;&amp;quot;; String comma = &amp;quot;,&amp;quot;; float hum, tmp, r = 0.0; p1 = &amp;quot;Hello&amp;quot;; hum = 24; r = random(0, 9); r = r / 10; hum = hum + r; p2 = hum; tmp = 20; r = random(0, 9); r = r / 10; tmp = tmp + r; p3 = tmp; payload = p1 + comma + p2 + comma + p3; Serial.</description>
     </item>
     
     <item>
       <title>Workshop 5: Uplink Transform</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-5/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-5/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-5/</guid>
       <description>To edit the uplink transfor for your Thing Type, select your Thing Type and click the pencil button.
 Insert the following JavaScript code into the Uplink Transform section:
 var variables = payload.toString(&#39;ascii&#39;).split(&amp;quot;,&amp;quot;); var tmpFloat = parseFloat(variables[1]); var humFloat = parseFloat(variables[2]); return { payload: payload.toString(&#39;utf-8&#39;), text: variables[0], humidity: humFloat, temperature: tmpFloat, timestamp: + new Date() };  </description>
@@ -185,19 +185,19 @@ var variables = payload.toString(&#39;ascii&#39;).split(&amp;quot;,&amp;quot;); 
     
     <item>
       <title>Workshop 6: App Board</title>
-      <link>https://pwntus.github.io/mic-workshops/workshop-6/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/workshop-6/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/workshop-6/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/workshop-6/</guid>
       <description>You can now select you thing in MIC and setup widgets to display data that it&amp;rsquo;s sending.</description>
     </item>
     
     <item>
       <title>Get Started with the API</title>
-      <link>https://pwntus.github.io/mic-workshops/api-get-started/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-get-started/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-get-started/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-get-started/</guid>
       <description>The RESTful API makes it possible to use a wide variety of technologies to utilize the MIC platform. As long as you can make HTTP-calls you&amp;rsquo;re good to go.
 In the following workshops we&amp;rsquo;ll use Node.js with the Vue.js JavaScript framework. It&amp;rsquo;s fast to get started with and building a functioning application.
 Installing Node.js The easies way of getting Node.js is to install the Node Version Manager (NVM). Head over to their GitHub page for instructions on how to install it for your preferred platform.</description>
@@ -205,31 +205,31 @@ Installing Node.js The easies way of getting Node.js is to install the Node Vers
     
     <item>
       <title>Manifest</title>
-      <link>https://pwntus.github.io/mic-workshops/manifest/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/manifest/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/manifest/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/manifest/</guid>
       <description>Managed IoT Cloud (MIC) is always deployed as a stack of services running on AWS. This means that for each stack, there will always be non-static variables such as API keys and endpoints. MIC utilizes AWS Lambda functions for business logic. This is what&amp;rsquo;s called a &amp;ldquo;serveless stack&amp;rdquo;, since there are no traditional servers involved. Each each of these Lambdas has a unique identifier. So how do an aplication keep track of all these endpoints and configurations that are different for each stack?</description>
     </item>
     
     <item>
       <title>Workshop 1: Create an API Client</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/</guid>
       <description>Our first workshop will focus on creating a HTTP client with necessary configurations to make both unauthenticated and authenticated requests.
 Open a clean directory and clone the working repository:
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/01 and run npm i:
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/01 and run npm i:
 cd mic-workshops/workshops/01 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
     </item>
     
     <item>
       <title>Configure</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/configure/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/configure/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/configure/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/configure/</guid>
       <description>You should now have a clone of a stub project where we will continue to write code for our first API request.
 Open index.js. You should see the following content:
 // mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;&#39; const API_KEY = &#39;&#39; const USERNAME = &#39;&#39; const PASSWORD = &#39;&#39; // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { // Implement me!</description>
@@ -237,10 +237,10 @@ Open index.js. You should see the following content:
     
     <item>
       <title>First API call</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/first-api-call/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/first-api-call/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/first-api-call/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/first-api-call/</guid>
       <description>We now have the necessary info to make our first unauthenticated API call. The next step is to authenticate with a username/password combination.
 Auth API You can find the full documentation on the Auth API here. The Auth API has multiple endpoints but we&amp;rsquo;ll use the LOGIN endpoint. To login we need to send a POST request to the API endpoint /auth/login.
 Continue by adding code to index.js for our request:</description>
@@ -248,19 +248,19 @@ Continue by adding code to index.js for our request:</description>
     
     <item>
       <title>Complete Code</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/complete-code/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/complete-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/complete-code/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/complete-code/</guid>
       <description>// mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;https://xxxxxxxxxx.execute-api.xx-xxxx-x.amazonaws.com/prod&#39; const API_KEY = &#39;&amp;lt; API key &amp;gt;&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { try { // Make a Auth API POST request to the /auth/login endpoint const response = await api({ method: &#39;post&#39;, url: &#39;/auth/login&#39;, // Add a username/password combination as payload data: { userName: USERNAME, password: PASSWORD } }) console.</description>
     </item>
     
     <item>
       <title>Authenticate API Call</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/authenticate-api-call/</guid>
       <description>All other API endpoints except for /auth/ and /metadata requires a logged in user. As we saw in the previous page, we called /auth/login. The response after a successful login contains a credentials object with three properties; identityId, token and refreshToken.
 Example response:
 { &amp;quot;credentials&amp;quot;: { &amp;quot;identityId&amp;quot;: &amp;quot;eu-west-1:72ty9374-29ko-1293-384y-4g66u87f3hfe&amp;quot;, &amp;quot;token&amp;quot;: &amp;quot;nkiOiJNeSIsImN1c3Rvb&amp;quot;, &amp;quot;refreshToken&amp;quot;: &amp;quot;DnTY4m2lpDPb3BjG&amp;quot; } }  This object needs to be stored locally by the API consumer in order to remove the need to login before every request.</description>
@@ -268,31 +268,31 @@ Example response:
     
     <item>
       <title>Final Code</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-1/final-code/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/final-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-1/final-code/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-1/final-code/</guid>
       <description>// mic-workshops/workshops/01/index.js const axios = require(&#39;axios&#39;) // HTTP library // Insert variables const API_URL = &#39;https://xxxxxxxxxx.execute-api.xx-xxxx-x.amazonaws.com/prod&#39; const API_KEY = &#39;&amp;lt; API key&amp;gt;&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; let API_CREDENTIALS = null // Init HTTP client const api = axios.create({ baseURL: API_URL, headers: { // Attach required &#39;x-api-key&#39; header with every request &#39;x-api-key&#39;: API_KEY } }) const main = async () =&amp;gt; { try { // Make a Auth API POST request to the /auth/login endpoint const response = await api({ method: &#39;post&#39;, url: &#39;/auth/login&#39;, // Add a username/password combination as payload data: { userName: USERNAME, password: PASSWORD } }) // Store login credentials for later usage API_CREDENTIALS = response.</description>
     </item>
     
     <item>
       <title>Workshop 2: Use the API</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/</guid>
       <description>During the first workshop we setup a simple HTTP client with the necessary configuration for making both unauthenticated and authenticated API calls. During the second workshop, we&amp;rsquo;ll focus on actually making some API calls.
 Open a clean directory and clone the working repository (if not already done):
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/02 and run npm i:
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/02 and run npm i:
 cd mic-workshops/workshops/02 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
     </item>
     
     <item>
       <title>Login</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/login/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/login/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/login/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/login/</guid>
       <description>Included in this code stub is a api.class.js file containing a class performing the steps we&amp;rsquo;ve covered in the previous workshop.
 Open index.js. Include the API class and instantiate a new API object:
 // mic-workshops/workshops/02/index.js const API = require(&#39;./api.class.js&#39;) const myApi = new API(&#39;&amp;lt; API key &amp;gt;&#39;)  Login The API class has already setup the base URL and API key for us. It also exposes a login() method we&amp;rsquo;ll use to authenticate a user.</description>
@@ -300,20 +300,20 @@ Open index.js. Include the API class and instantiate a new API object:
     
     <item>
       <title>List Thing Types</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/list-thing-types/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/list-thing-types/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/list-thing-types/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/list-thing-types/</guid>
       <description>We&amp;rsquo;ve now logged in a user using the login() method of the included API class. This included API class also exposes a invoke() method we can use to call the API with the necessary headers included after we&amp;rsquo;ve logged in.
 Next we&amp;rsquo;ll list all Thing Types available to our currently authorized user. We&amp;rsquo;ll use the Thing Type LIST endpoint to get a list of all Thing Types. This is simply done by sending a GET method to /thingtypes.</description>
     </item>
     
     <item>
       <title>Get Thing Type Info</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/get-thing-type-info/</guid>
       <description>After we&amp;rsquo;ve listed all available Thing Types we will continue to query information about a specific Thing Type.
 We&amp;rsquo;ll use the Thing Type GET endpoint to get information about a specific Thing Type. This is done by sending a GET method to /thingtypes/{id} with a Thing Type ID as query parameter.
    Thing Type GET      Method GET   Endpoint /thingtypes/{id}   {id} The ID of the Thing Type to get, set in query path    Continue to add code after our login() call, using the invoke() method.</description>
@@ -321,10 +321,10 @@ We&amp;rsquo;ll use the Thing Type GET endpoint to get information about a speci
     
     <item>
       <title>Find Things</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/find-things/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/find-things/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/find-things/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/find-things/</guid>
       <description>We&amp;rsquo;ll now find all Things attached to a specific Thing Type.
 We&amp;rsquo;ll use the Thing Management FIND endpoint. This is done by sending a POST method to /things/find with an Elasticsearch query as payload.
    Thing Management FIND      Method POST   Endpoint /things/find   Body The query to run on Elasticsearch specified using Elasticsearch Query DSL    Continue to add code after our login() call, using the invoke() method.</description>
@@ -332,10 +332,10 @@ We&amp;rsquo;ll use the Thing Management FIND endpoint. This is done by sending 
     
     <item>
       <title>Observe a Thing</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-2/observe-a-thing/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/observe-a-thing/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-2/observe-a-thing/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-2/observe-a-thing/</guid>
       <description>Similarily to finding Things, we&amp;rsquo;ll now use the Observation API to find or &amp;ldquo;observe&amp;rdquo; historical data reported by Things.
 We&amp;rsquo;ll use the Observation FIND endpoint. This is done by sending a POST method to /observations/find with an Elasticsearch query as payload.
    Observation FIND      Method POST   Endpoint /observations/find   Body The query to run on Elasticsearch specified using Elasticsearch Query DSL    Continue to add code after our login() call, using the invoke() method.</description>
@@ -343,21 +343,21 @@ We&amp;rsquo;ll use the Observation FIND endpoint. This is done by sending a POS
     
     <item>
       <title>Workshop 3: MQTT Realtime</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-3/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-3/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/</guid>
       <description>During the first workshop we saw how we could create a HTTP client with necessary headers to make API calls. The second workshop made us experiment with the API and calling different API endpoints. During the third workshop we will create a MQTT client, allowing us to subscribe to data generated by Things.
 Open a clean directory and clone the working repository (if not already done):
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/03 and run npm i:</description>
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/03 and run npm i:</description>
     </item>
     
     <item>
       <title>Configure MQTT Client</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-3/configure-mqtt-client/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/configure-mqtt-client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-3/configure-mqtt-client/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/configure-mqtt-client/</guid>
       <description>You should now have a clone of a stub project where we will continue to write code for our MQTT client.
 Open index.js. You should see the following content:
 // mic-workshops/workshops/03/index.js const AWSMqtt = require(&#39;aws-mqtt-client&#39;).default const API = require(&#39;./api.class.js&#39;) const myApi = new API() // Insert variables const IOT_ENDPOINT = &#39;&#39; const AWS_REGION = &#39;&#39; const USERNAME = &#39;&#39; const PASSWORD = &#39;&#39; const main = async () =&amp;gt; { try { await myApi.</description>
@@ -365,10 +365,10 @@ Open index.js. You should see the following content:
     
     <item>
       <title>Create MQTT Client</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-3/create-mqtt-client/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/create-mqtt-client/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-3/create-mqtt-client/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/create-mqtt-client/</guid>
       <description>We now have all the necessary info to actually create the MQTT client. We&amp;rsquo;ll use a package called aws-mqtt-client which works both in the browser and in Node.js. You can find the full documentation for the aws-mqtt-client package here.
 Continue by adding code to index.js, after we&amp;rsquo;ve logged in:
 // Instantiate a new MQTT client with configurations let MQTTClient = new AWSMqtt({ region: AWS_REGION, endpointAddress: IOT_ENDPOINT, maximumReconnectTimeMs: 8000, protocol: &#39;wss&#39; })  You can see here that we&amp;rsquo;re using AWS_REGION and IOT_ENDPOINT during the MQTT client initialization.</description>
@@ -376,10 +376,10 @@ Continue by adding code to index.js, after we&amp;rsquo;ve logged in:
     
     <item>
       <title>Add Event Listeners</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-3/add-event-listeners/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/add-event-listeners/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-3/add-event-listeners/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/add-event-listeners/</guid>
       <description>After we&amp;rsquo;ve instantiated a new MQTT client we need to add event listeners. Event listeners are &amp;ldquo;hooks&amp;rdquo; that trigger functions when different MQTT events occur.
 Continue by adding code to index.js:
 // If an error occurs MQTTClient.on(&#39;error&#39;, e =&amp;gt; { console.error(&#39;MQTT error:&#39;, e) }) // If a reconnect happens MQTTClient.on(&#39;reconnect&#39;, () =&amp;gt; { console.error(&#39;MQTT reconnect, check topic&#39;) }) // Incoming message MQTTClient.on(&#39;message&#39;, (topic, message) =&amp;gt; { console.log(&#39;MQTT message: &#39;, JSON.parse(message.toString(&#39;utf-8&#39;))) })  We&amp;rsquo;ve added three event listeners, but before we can watch incoming messages we need to subscribe to a topic.</description>
@@ -387,31 +387,31 @@ Continue by adding code to index.js:
     
     <item>
       <title>Final Code</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-3/final-code/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/final-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-3/final-code/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/final-code/</guid>
       <description>// mic-workshops/workshops/03/index.js const AWSMqtt = require(&#39;aws-mqtt-client&#39;).default const API = require(&#39;./api.class.js&#39;) const myApi = new API(&#39;&amp;lt; API key &amp;gt;&#39;) // Insert variables const IOT_ENDPOINT = &#39;xxxxxxxxxxxxxx.iot.xx-xxxx-x.amazonaws.com&#39; const AWS_REGION = &#39;xx-xxxx-x&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; const main = async () =&amp;gt; { try { await myApi.init() // Init API (fetch Manifest) await myApi.login({ username: USERNAME, password: PASSWORD }) // Create a Cognito Identity before authorizing MQTT client const cognitoIdentity = await myApi.</description>
     </item>
     
     <item>
       <title>Workshop 4: Vue.js</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/</guid>
       <description>The second workshop will focus on setting up a simple Vue.js web-app with a login form for a user to authenticate.
 Open a clean directory and clone the working repository (if not already done):
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/04 and run npm i:
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/04 and run npm i:
 cd mic-workshops/workshops/04 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
     </item>
     
     <item>
       <title>Vuex</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/vuex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/vuex/</guid>
       <description>This workshop will not teach you how Vue.js works in detail. If you&amp;rsquo;ve got experience with React + Redux, or any other frontend framework with a state management pattern, you will find this very similar.
 Vuex Vuex is a state management pattern + library for Vue.js. We need to know some of it because we&amp;rsquo;ll use a great Vuex module which let&amp;rsquo;s us authenticate with MIC very easily.
 Vuex Cognito Module The MIC API relies on AWS Cognito for user management.</description>
@@ -419,10 +419,10 @@ Vuex Cognito Module The MIC API relies on AWS Cognito for user management.</desc
     
     <item>
       <title>Create a Login Form</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/create-a-login-form/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/create-a-login-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/create-a-login-form/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/create-a-login-form/</guid>
       <description>With the Cognito Vuex Module in place, let&amp;rsquo;s continue with creating a login form.
 Open the Login component in src/components/Login.vue.
 Vue.js Single File Component
@@ -433,10 +433,10 @@ A Vue.js Single File Component (SFC) is a .vue file which usually contains a tem
     
     <item>
       <title>Logout</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/logout/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/logout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/logout/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/logout/</guid>
       <description>We&amp;rsquo;ve now added login functionality to our Login component and we&amp;rsquo;ll continue to implement the logout() method.
 To do this we need the signOut() action from the Cognito Vuex Module. We&amp;rsquo;ll utilize the mapActions Vuex helper again to inject the required action into our Login-component:
 Open the Login component in src/components/Login.vue.
@@ -445,22 +445,22 @@ methods: { ...mapActions(&#39;Cognito&#39;, [&#39;signInUser&#39;, &#39;signOut&
     
     <item>
       <title>Final Code</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/final-code/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/final-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/final-code/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/final-code/</guid>
       <description>// mic-workshops/workshops/04/src/components/Login.vue // Import Vuex helpers import { mapActions, mapGetters } from &#39;vuex&#39; export default { name: &#39;Login&#39;, data: () =&amp;gt; ({ form: false, username: undefined, password: undefined, loading: false, isError: false }), computed: mapGetters(&#39;Cognito&#39;, [&#39;isLoggedIn&#39;]), methods: { ...mapActions(&#39;Cognito&#39;, [&#39;signInUser&#39;, &#39;signOut&#39;]), async login () { this.loading = true this.isError = false try { // Call &#39;signInUser&#39; to login our user await this.signInUser({ username: this.username, password: this.password }) } catch (e) { this.</description>
     </item>
     
     <item>
       <title>Workshop 5: Vue.js Cont.</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-5/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-5/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-5/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-5/</guid>
       <description>It is advised to have general knowledge of how Vue.js + Vuex works before proceeding.
 Open a clean directory and clone the working repository (if not already done):
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/05 and run npm i:
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/05 and run npm i:
 cd mic-workshops/workshops/05 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.
 Under Construction
 Please wait&amp;hellip;

@@ -2,32 +2,32 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Api-workshop-4s on Managed IoT Cloud Workshops</title>
-    <link>https://pwntus.github.io/mic-workshops/api-workshop-4/</link>
+    <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/</link>
     <description>Recent content in Api-workshop-4s on Managed IoT Cloud Workshops</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="https://pwntus.github.io/mic-workshops/api-workshop-4/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://telenorstartiot.github.io/mic-workshops/api-workshop-4/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Workshop 4: Vue.js</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/</guid>
       <description>The second workshop will focus on setting up a simple Vue.js web-app with a login form for a user to authenticate.
 Open a clean directory and clone the working repository (if not already done):
-git clone https://github.com/Pwntus/mic-workshops.git  Next, navigate to mic-workshops/workshops/04 and run npm i:
+git clone https://github.com/TelenorStartIoT/mic-workshops.git  Next, navigate to mic-workshops/workshops/04 and run npm i:
 cd mic-workshops/workshops/04 &amp;amp;&amp;amp; npm i  Wait for it to complete before continuing.</description>
     </item>
     
     <item>
       <title>Vuex</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/vuex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/vuex/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/vuex/</guid>
       <description>This workshop will not teach you how Vue.js works in detail. If you&amp;rsquo;ve got experience with React + Redux, or any other frontend framework with a state management pattern, you will find this very similar.
 Vuex Vuex is a state management pattern + library for Vue.js. We need to know some of it because we&amp;rsquo;ll use a great Vuex module which let&amp;rsquo;s us authenticate with MIC very easily.
 Vuex Cognito Module The MIC API relies on AWS Cognito for user management.</description>
@@ -35,10 +35,10 @@ Vuex Cognito Module The MIC API relies on AWS Cognito for user management.</desc
     
     <item>
       <title>Create a Login Form</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/create-a-login-form/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/create-a-login-form/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/create-a-login-form/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/create-a-login-form/</guid>
       <description>With the Cognito Vuex Module in place, let&amp;rsquo;s continue with creating a login form.
 Open the Login component in src/components/Login.vue.
 Vue.js Single File Component
@@ -49,10 +49,10 @@ A Vue.js Single File Component (SFC) is a .vue file which usually contains a tem
     
     <item>
       <title>Logout</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/logout/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/logout/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/logout/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/logout/</guid>
       <description>We&amp;rsquo;ve now added login functionality to our Login component and we&amp;rsquo;ll continue to implement the logout() method.
 To do this we need the signOut() action from the Cognito Vuex Module. We&amp;rsquo;ll utilize the mapActions Vuex helper again to inject the required action into our Login-component:
 Open the Login component in src/components/Login.vue.
@@ -61,10 +61,10 @@ methods: { ...mapActions(&#39;Cognito&#39;, [&#39;signInUser&#39;, &#39;signOut&
     
     <item>
       <title>Final Code</title>
-      <link>https://pwntus.github.io/mic-workshops/api-workshop-4/final-code/</link>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/final-code/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
-      <guid>https://pwntus.github.io/mic-workshops/api-workshop-4/final-code/</guid>
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-4/final-code/</guid>
       <description>// mic-workshops/workshops/04/src/components/Login.vue // Import Vuex helpers import { mapActions, mapGetters } from &#39;vuex&#39; export default { name: &#39;Login&#39;, data: () =&amp;gt; ({ form: false, username: undefined, password: undefined, loading: false, isError: false }), computed: mapGetters(&#39;Cognito&#39;, [&#39;isLoggedIn&#39;]), methods: { ...mapActions(&#39;Cognito&#39;, [&#39;signInUser&#39;, &#39;signOut&#39;]), async login () { this.loading = true this.isError = false try { // Call &#39;signInUser&#39; to login our user await this.signInUser({ username: this.username, password: this.password }) } catch (e) { this.</description>
     </item>
     
