@@ -76,3 +76,6 @@ typings/
 
 # Hugo public folder
 public/
+
+# Editor files
+.DS_Store
