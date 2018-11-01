@@ -34,8 +34,6 @@ MIC provides an intuitive way to structure your IoT infrastructure. `Thing Types
 
 `Users` and `Thing Types` can be sorted under `domains`. Use `sub-domains` to create a domain-tree of which users get different access to parts of your infrastructure.
 
-These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what's in store. Next we'll start by setting up an IoT device.
-
 ## Well defined REST API (and GraphQL)
 All functionality in MIC Core is exposed in a well defined REST API. You can find the documentation of the REST API here: [https://docs.telenorconnexion.com/mic/](https://docs.telenorconnexion.com/mic/). The MIC GUI (appBoard) uses these API´s in order to give you a full blown graphical user interface. Telenor Start IoT also offers a complete open source GUI that shows you how the API´s are used. In the near future MIC will also support [GraphQL](https://graphql.org/) support as an alternative to the REST API. GraphQL is a great tool if you want to create highly responsive GUI´s.
 
@@ -44,3 +42,5 @@ MIC has been designed with a security first mindset and building your IoT servic
 
 ## Focus on your business case
 MIC allows you to focus on your use and business case. You can put all your effort into what matters for your service and the frontend(s) you want to expose to your end users.
+
+These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what's in store. Next we'll start by setting up an IoT device.
