@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/workshop-3/</guid>
-      <description>We&amp;rsquo;ll start by provision a device, called a Thing in MIC, which will represent our device in the physical world.</description>
+      <description>We&amp;rsquo;ll start by provisioning a device, called a Thing in MIC. The MIC Thing will be a representation in MIC of our device existing in the physical world.</description>
     </item>
     
     <item>

@@ -16,7 +16,7 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/workshop-5/</guid>
-      <description>To edit the uplink transfor for your Thing Type, select your Thing Type and click the pencil button.
+      <description>To edit the uplink transform for your Thing Type, select your Thing Type and click the pencil button.
 Insert the following JavaScript code into the Uplink Transform section:
 var variables = payload.toString(&#39;ascii&#39;).split(&amp;quot;,&amp;quot;); var tmpFloat = parseFloat(variables[1]); var humFloat = parseFloat(variables[2]); return { payload: payload.toString(&#39;utf-8&#39;), text: variables[0], humidity: humFloat, temperature: tmpFloat, timestamp: + new Date() };  </description>
     </item>
