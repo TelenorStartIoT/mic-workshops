@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Send Packet - Managed IoT Cloud Workshops</title>
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.50" />
 
     
     <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
@@ -402,6 +402,11 @@
 </code></pre>
 
 <p>MIC support all types of payloads, but you need to introduce an uplink transform in MIC for your <code>Thing Type</code> to match the  structure of your payload.</p>
+
+<div class="admonition note">
+<p class="admonition-title">Important: First run notice</p>
+<p>The first time you run the sketch (after you have created the uplink in the next session) let it send at least 15 payloads before you restart or cuts power on the device. For some reason (we are not sure why yet) the network sometimes buffers at least 12 payloads before it is received by MIC. If you are still not receiving anything, upload an run the sketch again.</p>
+</div>
 
 
       <aside class="copyright" role="note">
