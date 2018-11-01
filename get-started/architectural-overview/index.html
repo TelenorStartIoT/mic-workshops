@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Prerequisites - Managed IoT Cloud Workshops</title>
+    <title>NB-IoT Architectural Overview - Managed IoT Cloud Workshops</title>
     <meta name="generator" content="Hugo 0.50" />
 
     
     <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
     
-    <link rel="canonical" href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/">
+    <link rel="canonical" href="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/">
     
     <meta name="author" content="Pontus Edvard Aurdal">
     
 
-    <meta property="og:url" content="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/">
+    <meta property="og:url" content="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/">
     <meta property="og:title" content="Managed IoT Cloud Workshops">
     <meta property="og:image" content="https://telenorstartiot.github.io/mic-workshops/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Managed IoT Cloud Workshops">
@@ -96,7 +96,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Prerequisites
+        NB-IoT Architectural Overview
       </div>
     </div>
 
@@ -171,14 +171,14 @@
           </li>
         
           <li class="anchor">
-            <a class="active" title="Prerequisites" href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/">
+            <a  title="Prerequisites" href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/">
               
               Prerequisites
             </a>
           </li>
         
           <li class="anchor">
-            <a  title="NB-IoT Architectural Overview" href="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/">
+            <a class="active" title="NB-IoT Architectural Overview" href="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/">
               
               NB-IoT Architectural Overview
             </a>
@@ -365,28 +365,31 @@
 
   <article class="article">
     <div class="wrapper">
-      <h1>Prerequisites </h1>
+      <h1>NB-IoT Architectural Overview </h1>
 
-      <p>The <a href="https://store.arduino.cc/arduino-mkr-nb-1500">Arduino MKR NB 1500</a> is fully compatible with Telenor Norways Narrow Band IoT (NB-IoT) and LTE CAT M1 networks. In this workshop we&rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open <code>mda.ee</code> APN over the Telenor NB-IoT network.</p>
+      
 
-<p>Before continuing, make sure that:</p>
+<h2 id="developers-first">Developers first</h2>
 
-<ul>
-<li>You have access to a valid MIC account (if you are attending an event, an account will be announced for you during the event) or go here to create one:</li>
-</ul>
+<p>The Telenor Start IoT initiative has taken a <em><strong>developer first</strong></em> approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform used in the initiative. The next two paragraphs illustrates how this has been done. Feel free to skip reading it, it is just for your information :-)</p>
 
-<p><a href="https://startiot.mic.telenorconnexion.com/signup">https://startiot.mic.telenorconnexion.com/signup</a></p>
+<h2 id="telenor-lte-architecture-and-nb-iot">Telenor LTE architecture and NB-IoT</h2>
 
-<ul>
-<li>You are able to login to the MIC App Board:</li>
-</ul>
+<p>If you just buy NB-IoT/Cat M1 SIM cards you will have to either use the open <em><strong>telenor.iot</strong></em> Access Point Name (APN) or set up a private APN.</p>
 
-<p><a href="https://startiot.mic.telenorconnexion.com/login">https://startiot.mic.telenorconnexion.com/login</a></p>
+<p><img src="https://telenorstartiot.github.io/mic-workshops/images/architectural-overview-00-cellular-architecture.png" alt="Simplified Telenor LTE infrastructure" title="The LTE cellular network architecture" /></p>
 
-<div class="admonition note">
-<p class="admonition-title">App Board</p>
-<p>The <strong>App Board</strong> is the web interface of Managed IoT Cloud. It is used to provision devices and create dashboards, but it is completely optional to use. Login here: <a href="https://startiot.mic.telenorconnexion.com/login">https://startiot.mic.telenorconnexion.com/login</a></p>
-</div>
+<p>In the image above the PGW is where the traffic leaves the Telenor cellular network. This is where we can create named Access Points (APN´s). UA (User Equipment) is your device.</p>
+
+<p>If you use the open API the traffic is not encrypted when it leaves the cellular network provided by Telenor. If you want a private APN you will have to make an agreeemnt with Telenor (and pay extra for it). With a private APN you will also have to host (or pay for hosting of) a <a href="https://en.wikipedia.org/wiki/RADIUS">RADIUS</a> server for authentication and authorisation of your devices. If you want the traffic to be encrypted you will also have to set up an IPSec VPN tunnel (In Norway, Telenor sells this branded as Telenor MDA Go).</p>
+
+<p>When you use the Start IoT initiative offering this has been set up for you.</p>
+
+<h2 id="horde-and-mic">Horde and MIC</h2>
+
+<p>The Horde platform component  (including the Radius server) has been developed by Telenor Exploratory Engineering. The Managed IoT Cloud platform has been developed by Telenor Connexion. Telenor Start IoT puts this together as the figure below shows.</p>
+
+<p><img src="https://telenorstartiot.github.io/mic-workshops/images/architectural-overview-01-developer-architecture.png" alt="Telenor Start IoT NB-IoT developer architecture" title="The LTE cellular network architecture" /></p>
 
 
       <aside class="copyright" role="note">
@@ -399,7 +402,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/" title="Why use MIC">
+      <a href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/" title="Prerequisites">
         <span class="direction">
           Previous
         </span>
@@ -409,7 +412,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Why use MIC
+              Prerequisites
             </div>
           </div>
         </div>
@@ -419,14 +422,14 @@
 
   <div class="next">
   
-      <a href="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/" title="NB-IoT Architectural Overview">
+      <a href="https://telenorstartiot.github.io/mic-workshops/workshop-1/" title="Workshop 1: Arduino IDE">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              NB-IoT Architectural Overview
+              Workshop 1: Arduino IDE
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
