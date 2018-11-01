@@ -4,7 +4,7 @@ url: workshop-3/new-thing/
 weight: 430
 menu:
   main:
-    parent: "Workshop 3: Provision a Device"
+    parent: "Workshop 3: Provisioning a Device"
     identifier: Create Thing
 ---
 

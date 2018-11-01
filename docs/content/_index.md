@@ -10,7 +10,7 @@ This site contains easy to follow, step-by-step workshops for you to learn how t
 
 > **Update 31. October 2018:** The API workshops and Arduino sections have been switched.
 
-> **Update 26. October 2018:** I've added a guide to provision a device in the App Board and how to connect an Arduino MKR NB 1500 using NB-IoT with the open telenor.iot APN.
+> **Update 26. October 2018:** Added a guide to provision a device in the App Board and how to connect an Arduino MKR NB 1500 using NB-IoT with the open telenor.iot APN.
 
 {{< note title="Feedback Wanted" >}}
 Please don't hesitate to contact me, submit PR's or ask for help on what is written here.

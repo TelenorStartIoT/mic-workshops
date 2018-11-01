@@ -1,5 +1,5 @@
 ---
-title: "Workshop 3: Provision a Device"
+title: "Workshop 3: Provisioning a Device"
 url: workshop-3/
 weight: 410
 ---
