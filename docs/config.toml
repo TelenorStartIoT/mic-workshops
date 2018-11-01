@@ -63,7 +63,7 @@ publishDir="../public"
   weight = 300
 
 [[menu.main]]
-  name   = "Workshop 3: Provision a Device"
+  name   = "Workshop 3: Provisioning a Device"
   url    = "workshop-3/"
   weight = 400
 

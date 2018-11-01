@@ -4,7 +4,7 @@ url: workshop-5/
 weight: 610
 ---
 
-To edit the uplink transfor for your Thing Type, select your Thing Type and click the pencil button.
+To edit the uplink transform for your Thing Type, select your Thing Type and click the pencil button.
 
 Insert the following JavaScript code into the Uplink Transform section:
 
