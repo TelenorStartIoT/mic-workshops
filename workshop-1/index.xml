@@ -16,8 +16,8 @@
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/workshop-1/</guid>
-      <description>The Arduino IDE (Integrated Development Environment) is used to easily write code and upload it to a board. This workshop will guide you through how to setup the IDE for the Arduino MKR NB 1500 board we&amp;rsquo;ll be using during future workshops.
-Download the latest Arduino IDE version for your platform and install.</description>
+      <description>The Arduino IDE (Integrated Development Environment) is used to make it easy to write code and upload the code to a board. This workshop will guide you through how to setup the IDE for the Arduino MKR NB 1500 pre-release board that we will be using in the rest of the workshops.
+As a first step, download the latest Arduino IDE version for your platform and install it.</description>
     </item>
     
     <item>
@@ -41,7 +41,7 @@ Sketchbook Folder Location
     </item>
     
     <item>
-      <title>Include MKR NB IoT Library</title>
+      <title>Include MKR NB IoT Library and examples</title>
       <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/include-lib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
