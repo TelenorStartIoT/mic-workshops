@@ -1,11 +1,11 @@
 ---
-title: Include MKR NB IoT Library
+title: Include MKR NB IoT Library and examples
 url: workshop-1/include-lib/
 weight: 240
 menu:
   main:
     parent: "Workshop 1: Arduino IDE"
-    identifier: "Include MKR NB IoT Library"
+    identifier: "Include MKR NB IoT Library and examples"
 ---
 
 * Open Arduino IDE and go to **Sketch ⟶ Include Library ⟶ Add .ZIP Library...**

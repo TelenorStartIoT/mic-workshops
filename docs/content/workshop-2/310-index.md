@@ -4,7 +4,7 @@ url: workshop-2/
 weight: 310
 ---
 
-The next step is to load a sketch that allows you to send AT (**at**tention) commands directly to the modem on the board.
+The next step is to load a sketch that allows you to send AT (**at**tention) commands directly to the modem on the board. AT commands are alos called [Hayes commands] (https://en.wikipedia.org/wiki/Hayes_command_set).
 
 Load the following sketch and upload it to your device.
 
