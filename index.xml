@@ -83,7 +83,7 @@ Sketchbook Folder Location
     </item>
     
     <item>
-      <title>Include MKR NB IoT Library and examples</title>
+      <title>Include MKR NB IoT Library and Examples</title>
       <link>https://telenorstartiot.github.io/mic-workshops/workshop-1/include-lib/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
@@ -97,13 +97,13 @@ Sketchbook Folder Location
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/workshop-2/</guid>
-      <description>The next step is to load a sketch that allows you to send AT (attention) commands directly to the modem on the board. AT commands are alos called Hayes commands.
+      <description>The next step is to load a sketch that allows you to send AT (attention) commands directly to the modem on the board. AT commands are also called Hayes commands.
 Load the following sketch and upload it to your device.
 // baud rate used for both Serial ports unsigned long baud = 115200; void setup() { // reset the ublox module pinMode(SARA_RESETN, OUTPUT); digitalWrite(SARA_RESETN, HIGH); delay(100); digitalWrite(SARA_RESETN, LOW); Serial.begin(baud); SerialSARA.begin(baud); } void loop() { if (Serial.</description>
     </item>
     
     <item>
-      <title>Workshop 3: Provision a Device</title>
+      <title>Workshop 3: Provisioning a Device</title>
       <link>https://telenorstartiot.github.io/mic-workshops/workshop-3/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
