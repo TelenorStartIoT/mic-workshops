@@ -20,6 +20,10 @@ Before continuing, make sure that:
 
   [https://startiot.mic.telenorconnexion.com/login](https://startiot.mic.telenorconnexion.com/login)
 
+{{< warning title="Workshop Material" >}}
+You can get the required workshop material by downloading [this ZIP file here](https://www.dropbox.com/s/gk6at2et1ua80ic/Workshop%20Material.zip?dl=0).
+{{< /warning >}}
+
 {{< note title="App Board" >}}
 The **App Board** is the web interface of Managed IoT Cloud. It is used to provision devices and create dashboards, but it is completely optional to use. Login here: https://startiot.mic.telenorconnexion.com/login
 {{< /note >}}
