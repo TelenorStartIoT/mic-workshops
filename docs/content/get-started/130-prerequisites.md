@@ -12,7 +12,7 @@ The [Arduino MKR NB 1500](https://store.arduino.cc/arduino-mkr-nb-1500) is fully
 
 Before continuing, make sure that:
 
-* You have access to a valid MIC account (if you are attending an event, an account will be announced for you during the event) or go here to create one: 
+* You have access to a valid MIC account (if you are attending Elsys Hackathon, use username: elsyshack and password 12ElsyShacK!) or go here to create one: 
 
   [https://startiot.mic.telenorconnexion.com/signup](https://startiot.mic.telenorconnexion.com/signup)
 
