@@ -28,7 +28,7 @@ Telenor Connexion: Platform Development and Commercial offering Telenor Connexio
       
       <guid>https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/</guid>
       <description>You&amp;rsquo;re probably wondering &amp;ldquo;what does MIC has to offer for me?&amp;rdquo;.
-There are several components, both known and unknown to most of us, when creating a full-blown IoT infrastructure. It&amp;rsquo;s easy to say &amp;ldquo;I&amp;rsquo;ll just spin up a SQL database and pipe all my data to it&amp;rdquo;, but how will you connect your IoT devices through LoRaWAN / NB-IoT, handle realtime updates, structure a fleet of e.g. 100+ IoT devices and query gigabytes of data stored years ago?</description>
+There are several components that is needed, both known and unknown to most of us, when creating a full-blown IoT infrastructure. It&amp;rsquo;s easy to say &amp;ldquo;I&amp;rsquo;ll just spin up a SQL database and pipe all my data to it&amp;rdquo;, but how will you connect your IoT devices through LoRaWAN / NB-IoT, handle realtime updates, structure a fleet of e.</description>
     </item>
     
     <item>
