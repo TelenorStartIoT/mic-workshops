@@ -21,7 +21,7 @@ Before continuing, make sure that:
   [https://startiot.mic.telenorconnexion.com/login](https://startiot.mic.telenorconnexion.com/login)
 
 {{< warning title="Workshop Material" >}}
-You can get the required workshop material by downloading [this ZIP file here](https://www.dropbox.com/s/gk6at2et1ua80ic/Workshop%20Material.zip?dl=0).
+You can get the required workshop material by downloading [this ZIP file here](https://www.dropbox.com/s/3n3guxveekf50ia/MKRNB1500-prerelase-20181024.zip?dl=0).
 {{< /warning >}}
 
 {{< note title="App Board" >}}
