@@ -63,5 +63,15 @@ Continue by adding code to index.js:
       <description>// mic-workshops/workshops/03/index.js const AWSMqtt = require(&#39;aws-mqtt-client&#39;).default const API = require(&#39;./api.class.js&#39;) const myApi = new API(&#39;&amp;lt; API key &amp;gt;&#39;) // Insert variables const IOT_ENDPOINT = &#39;xxxxxxxxxxxxxx.iot.xx-xxxx-x.amazonaws.com&#39; const AWS_REGION = &#39;xx-xxxx-x&#39; const USERNAME = &#39;&amp;lt; your MIC username &amp;gt;&#39; const PASSWORD = &#39;&amp;lt; your MIC password &amp;gt;&#39; const main = async () =&amp;gt; { try { await myApi.init() // Init API (fetch Manifest) await myApi.login({ username: USERNAME, password: PASSWORD }) // Create a Cognito Identity before authorizing MQTT client const cognitoIdentity = await myApi.</description>
     </item>
     
+    <item>
+      <title>Python subscription example</title>
+      <link>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/python-subscription-example/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://telenorstartiot.github.io/mic-workshops/api-workshop-3/python-subscription-example/</guid>
+      <description>Here is also an example in Python that shows how you can setup MQTT subscription (using the things X509 certificate). You will have to download the certificate file for the things that you want to listen (subscribe) to from MIC. The example below shows how to do it on two different things but you can add more things if you wish by doing copy/paste of the relevant code parts.
+# coding: latin-1 import sys import json, requests import xml.</description>
+    </item>
+    
   </channel>
 </rss>

@@ -9,18 +9,18 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
-    <title>Why use MIC - Managed IoT Cloud Workshops</title>
+    <title>Python subscription example - Managed IoT Cloud Workshops</title>
     <meta name="generator" content="Hugo 0.50" />
 
     
     <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
     
-    <link rel="canonical" href="https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/">
+    <link rel="canonical" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/python-subscription-example/">
     
     <meta name="author" content="Pontus Edvard Aurdal">
     
 
-    <meta property="og:url" content="https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/">
+    <meta property="og:url" content="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/python-subscription-example/">
     <meta property="og:title" content="Managed IoT Cloud Workshops">
     <meta property="og:image" content="https://telenorstartiot.github.io/mic-workshops/images/logo.png">
     <meta name="apple-mobile-web-app-title" content="Managed IoT Cloud Workshops">
@@ -96,7 +96,7 @@
     </div>
     <div class="stretch">
       <div class="title">
-        Why use MIC
+        Python subscription example
       </div>
     </div>
 
@@ -155,36 +155,11 @@
 
   <li>
     
-    <a class="active" title="Get Started" href="https://telenorstartiot.github.io/mic-workshops/get-started/">
+    <a  title="Get Started" href="https://telenorstartiot.github.io/mic-workshops/get-started/">
       
       Get Started
     </a>
 
-    
-      <ul>
-        
-          <li class="anchor">
-            <a class="active" title="Why use MIC" href="https://telenorstartiot.github.io/mic-workshops/get-started/why-use-mic/">
-              
-              Why use MIC
-            </a>
-          </li>
-        
-          <li class="anchor">
-            <a  title="Prerequisites" href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/">
-              
-              Prerequisites
-            </a>
-          </li>
-        
-          <li class="anchor">
-            <a  title="NB-IoT Architectural Overview" href="https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/">
-              
-              NB-IoT Architectural Overview
-            </a>
-          </li>
-        
-      </ul>
     
   </li>
 
@@ -300,11 +275,50 @@
 
   <li>
     
-    <a  title="Workshop 3: MQTT Realtime" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/">
+    <a class="active" title="Workshop 3: MQTT Realtime" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/">
       
       Workshop 3: MQTT Realtime
     </a>
 
+    
+      <ul>
+        
+          <li class="anchor">
+            <a  title="Configure MQTT Client" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/configure-mqtt-client/">
+              
+              Configure MQTT Client
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Create MQTT Client" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/create-mqtt-client/">
+              
+              Create MQTT Client
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Add Event Listeners" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/add-event-listeners/">
+              
+              Add Event Listeners
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a  title="Final Code" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/final-code/">
+              
+              Final Code
+            </a>
+          </li>
+        
+          <li class="anchor">
+            <a class="active" title="Python subscription example" href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/python-subscription-example/">
+              
+              Python subscription example
+            </a>
+          </li>
+        
+      </ul>
     
   </li>
 
@@ -365,49 +379,46 @@
 
   <article class="article">
     <div class="wrapper">
-      <h1>Why use MIC </h1>
+      <h1>Python subscription example </h1>
 
-      
+      <p>Here is also an example in Python that shows how you can setup MQTT subscription (using the things X509 certificate). You will have to download the certificate file for the things that you want to listen (subscribe) to from MIC. The example below shows how to do it on two different things but you can add more things if you wish by doing copy/paste of the relevant code parts.</p>
 
-<p>You&rsquo;re probably wondering &ldquo;what does MIC has to offer for me?&rdquo;.</p>
+<pre><code class="language-python"># coding: latin-1
+import sys
+import json, requests
+import xml.etree.ElementTree as ET
+import calendar
+from requests.auth import HTTPBasicAuth
+from AWSIoTPythonSDK.MQTTLib import AWSIoTMQTTClient
+import time
 
-<p>There are several components that is needed, both known and unknown to most of us, when creating a full-blown IoT infrastructure. It&rsquo;s easy to say &ldquo;I&rsquo;ll just spin up a SQL database and pipe all my data to it&rdquo;, but how will you connect your IoT devices through LoRaWAN / NB-IoT, handle realtime updates, structure a fleet of e.g. 100+ IoT devices and query gigabytes of data stored years ago? MIC has all the answers to these problems.</p>
+def customCallback(client, userdata, message):
+	# Do whatever you want to do with the received data here
+	print userdata
+	
 
-<h2 id="storage">Storage</h2>
+# Set up MQTT connection to 00001172
+myAWSIoTMQTTClient1 = AWSIoTMQTTClient(&quot;00001172&quot;)
+myAWSIoTMQTTClient1.configureEndpoint(&quot;a3k7odshaiipe8.iot.eu-west-1.amazonaws.com&quot;, 8883)
+priv_key_name = &quot;./00001172/privkey.pem&quot;
+cert_key_name = &quot;./00001172/cert.pem&quot;
+myAWSIoTMQTTClient1.configureCredentials(&quot;./root.pem&quot;, priv_key_name, cert_key_name)
+myAWSIoTMQTTClient1.connect()
+myAWSIoTMQTTClient1.subscribe(&quot;$aws/things/00001172/shadow/update&quot;, 1, customCallback)
 
-<p>MIC is mainly built on top of <a href="https://aws.amazon.com/">AWS</a>. It utilized the <a href="https://aws.amazon.com/s3/">Simple Storage Service (S3)</a> for long term data storage. This data is indexed by the extremely powerful <a href="https://www.elastic.co/">Elasticsearch</a> indexing engine which gives you an intuitive querying interface to retrieve data however you want for later analysis.</p>
+# Set up MQTT connection to 00001173
+myAWSIoTMQTTClient2 = AWSIoTMQTTClient(&quot;00001173&quot;)
+myAWSIoTMQTTClient2.configureEndpoint(&quot;a3k7odshaiipe8.iot.eu-west-1.amazonaws.com&quot;, 8883)
+priv_key_name = &quot;./00001173/privkey.pem&quot;
+cert_key_name = &quot;./00001173/cert.pem&quot;
+myAWSIoTMQTTClient2.configureCredentials(&quot;./root.pem&quot;, priv_key_name, cert_key_name)
+myAWSIoTMQTTClient2.connect()
+myAWSIoTMQTTClient2.subscribe(&quot;$aws/things/00001173/shadow/update&quot;, 1, customCallback)
 
-<p>The best part: all you have to do is send data to the platform and the rest is handled for you.</p>
+while True:
+	time.sleep(1)
 
-<h2 id="realtime">Realtime</h2>
-
-<p>MIC uses an <a href="https://docs.aws.amazon.com/iot/latest/developerguide/protocols.html">MQTT broker</a> which is part of <a href="https://aws.amazon.com/iot/">AWS IoT</a>. This means that you can send data to MIC using an MQTT client in any language/platform (that supports X.509 certificates and TLS or DTLS for MQTT transport), listen (subscibe) to incoming data and send data downlink to your IoT devices from MIC. MIC also supports devices connected using NB-IoT, LTE Cat M1 and LoRaWAN directly.</p>
-
-<h2 id="rules-engine">Rules Engine</h2>
-
-<p>MIC provides a highly configurable Rules Engine which lets you trigger custom events such as HTTP web-hooks or sending email/sms based on predefined conditions. This lets you chain events based on incoming data from your IoT devices. The rules engine can also be used to forward traffic from your devices to other endpoints.</p>
-
-<h2 id="structuring-your-infrastructure">Structuring Your Infrastructure</h2>
-
-<p>MIC provides an intuitive way to structure your IoT infrastructure. <code>Thing Types</code> act as classes for defining common traits of similar <code>Things</code>. In this way you can easily add more <code>Things</code> to already existing groups of <code>Thing Types</code>.</p>
-
-<h2 id="access-management">Access Management</h2>
-
-<p><code>Users</code> and <code>Thing Types</code> can be sorted under <code>domains</code>. Use <code>sub-domains</code> to create a domain-tree where users in differnet parts of the tree can be given different rights (roles).</p>
-
-<h2 id="well-defined-rest-api-and-graphql">Well defined REST API (and GraphQL)</h2>
-
-<p>All functionality in MIC Core is exposed in a well defined REST API. You can find the documentation of the REST API here: <a href="https://docs.telenorconnexion.com/mic/">https://docs.telenorconnexion.com/mic/</a>. The API can be used to access all the functionality in the MIC Core and as an example, the MIC GUI (appBoard) uses these API´s in order to give you a full blown graphical user interface. You can use the API to create your custom GUI or to integrate MIC functionality in existing web based applications that you might have. Telenor Start IoT also offers a complete open source GUI that shows you how the API is used. In the near future MIC will also support <a href="https://graphql.org/">GraphQL</a> support as an alternative to the REST API. GraphQL is a great tool if you want to create highly responsive GUI´s.</p>
-
-<h2 id="security-and-scalability">Security and scalability</h2>
-
-<p>MIC has been designed with a security first mindset and building your IoT service on top of MIC gives you all you need to make sure that your IoT application is best in class related to security. MIC is designed with scalability in mind and utilizes stateless microservices (AWS Lambda), low cost and scalable storage (AWS S3) in order to ensure that your future scalability needs are met in a cost effective manner.</p>
-
-<h2 id="focus-on-your-business-case">Focus on your business case</h2>
-
-<p>MIC allows you to focus on your use and business case. You can put all your effort into what matters for your service and the frontend(s) you want to expose to your end users.</p>
-
-<p>These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what&rsquo;s in store. Next we&rsquo;ll start by setting up an IoT device.</p>
+</code></pre>
 
 
       <aside class="copyright" role="note">
@@ -420,7 +431,7 @@
 <nav class="pagination" aria-label="Footer">
   <div class="previous">
   
-      <a href="https://telenorstartiot.github.io/mic-workshops/get-started/" title="Get Started">
+      <a href="https://telenorstartiot.github.io/mic-workshops/api-workshop-3/final-code/" title="Final Code">
         <span class="direction">
           Previous
         </span>
@@ -430,7 +441,7 @@
           </div>
           <div class="stretch">
             <div class="title">
-              Get Started
+              Final Code
             </div>
           </div>
         </div>
@@ -440,14 +451,14 @@
 
   <div class="next">
   
-      <a href="https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/" title="Prerequisites">
+      <a href="https://telenorstartiot.github.io/mic-workshops/api-workshop-4/" title="Workshop 4: Vue.js">
         <span class="direction">
           Next
         </span>
         <div class="page">
           <div class="stretch">
             <div class="title">
-              Prerequisites
+              Workshop 4: Vue.js
             </div>
           </div>
           <div class="button button-next" role="button" aria-label="Next">
