@@ -7,7 +7,11 @@ menu:
     parent: "Workshop 3: MQTT Realtime"
     identifier: MQTT Python Subscription Example
 ---
-Here is also an example in Python that shows how you can setup MQTT subscription (using the things X509 certificate). You will have to download the certificate file for the things that you want to listen (subscribe) to from MIC. The example below shows how to do it on two different things but you can add more things if you wish by doing copy/paste of the relevant code parts.
+A bit unrelated, but here is also an example in Python that shows how you can setup MQTT subscription (using the things X509 certificate and key). You will have to download the certificate file(s) for the things that you want to listen (subscribe) to from MIC, unzip the file(s) and change the path to the certificate path and key in the script to match where you stored the unzipped result files. You will also need to download the AWS IoT root certificate found here: [AWS IoT Root certificate] (https://www.symantec.com/content/en/us/enterprise/verisign/roots/VeriSign-Class%203-Public-Primary-Certification-Authority-G5.pem) and store it as root.pem (and change the path accordingly in your script).
+
+![Download certificates and keys](/images/workshop-3-00-python-subscription-example-mic-download-certificate.png "Download certificates and keys")
+
+The example below shows how to subscribe to data from two different things but you can add more things if you wish by doing copy/paste of the relevant code parts.
 
 ```python
 # coding: latin-1
