@@ -39,7 +39,7 @@ There are several components that is needed, both known and unknown to most of u
       <guid>https://telenorstartiot.github.io/mic-workshops/get-started/prerequisites/</guid>
       <description>The Arduino MKR NB 1500 is fully compatible with Telenor Norways Narrow Band IoT (NB-IoT) and LTE CAT M1 networks. In this workshop we&amp;rsquo;ll go through how to provision a device in MIC and how to program the Arduino MKR NB 1500 to send data using the open mda.ee APN over the Telenor NB-IoT network.
 Before continuing, make sure that:
- You have access to a valid MIC account (if you are attending Elsys Hackathon, use username: elsyshack and password 12ElsyShacK!</description>
+ You have access to a valid MIC account. If you are attending IIK lab, use username: IIK_lab and password 12IIKlab.</description>
     </item>
     
     <item>
