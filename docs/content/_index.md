@@ -8,7 +8,7 @@ Welcome to the Managed IoT Cloud Workshops!
 
 This site contains easy to follow, step-by-step workshops that you can follow in order to learn how to use the Telenor Start IoT offering including the [Managed IoT Cloud](https://www.telenorconnexion.com/managed-iot-cloud/) platform.
 
-The first section of workshops focuses on how to get started with a dev kit and provision it in the platform. Currently only the Arduino MKR1500 devi kit is used in these workshops but we will probably include similar descriptions for the Pycom Fipy dev kit as well.
+The first section of workshops focuses on how to get started with a dev kit and provision it in the platform. Currently only the Arduino MKR1500 dev kit is used in these workshops but we will probably include similar descriptions for the Pycom Fipy dev kit later on.
 
 The second section of workshops are mainly targeted at the programmatical usage of the [Cloud REST API](https://docs.telenorconnexion.com/mic/rest-api/) and assumes that you already have a [Managed IoT Cloud user](https://startiot.mic.telenorconnexion.com/signup).
 
