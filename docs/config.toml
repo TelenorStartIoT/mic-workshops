@@ -48,7 +48,7 @@ publishDir="../public"
 
 
 [[menu.main]]
-  name   = "Get Started with the Arduino"
+  name   = "Get Started"
   url    = "get-started/"
   weight = 100
 
