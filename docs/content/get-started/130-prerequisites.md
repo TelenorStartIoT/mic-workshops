@@ -12,7 +12,9 @@ The [Arduino MKR NB 1500](https://store.arduino.cc/arduino-mkr-nb-1500) is fully
 
 Before continuing, make sure that:
 
-* You have access to a valid MIC account. If you are attending IIK lab, use username: **_IIK\_lab_** and password **_12IIKlab_**. If not, go here to create one: 
+* You have access to a valid MIC account. If you are attending IIK lab, use username: **_IIK\_lab_** and password **_12IIKlab_**
+
+* If you are not attending the IIK lab, go here to create one: 
 
   [https://startiot.mic.telenorconnexion.com/signup](https://startiot.mic.telenorconnexion.com/signup)
 
