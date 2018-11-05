@@ -139,7 +139,9 @@ When your device sends data, you&amp;rsquo;ll be able to view it in a dashboard,
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/workshop-4/</guid>
-      <description>With your Arduino IDE setup for the Arduino MKR NB 1500, create a new sketch.</description>
+      <description>Antenna!
+Remember to connect the antenna to the Arduino before you continue!
+ With your Arduino IDE setup for the Arduino MKR NB 1500, create a new sketch.</description>
     </item>
     
     <item>
