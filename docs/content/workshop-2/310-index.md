@@ -34,7 +34,11 @@ void loop() {
 }
 ```
 
-Open the serial monitor and type the following command to get the [`IMSI`] (https://en.wikipedia.org/wiki/International_mobile_subscriber_identity) and [`IMEI`](https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity) numbers.
+Open the serial monitor and type the following command to get the [IMSI] (https://en.wikipedia.org/wiki/International_mobile_subscriber_identity) and [IMEI](https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity) numbers:
+
+```
+AT+CIMI;+CGSN
+```
 
 ![AT commands to get IMSI and IMEI](/images/arduino-mkr-nb-1500-08-at-serial.png "AT commands to get IMSI and IMEI")
 

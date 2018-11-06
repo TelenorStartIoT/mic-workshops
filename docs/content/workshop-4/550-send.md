@@ -38,6 +38,6 @@ unsigned long sendMICUDPpacket(IPAddress& address) {
 
 MIC support all types of payloads, but you need to introduce an uplink transform in MIC for your `Thing Type` to match the  structure of your payload.
 
-{{< note title="Important: First run notice" >}}
-The first time you run the sketch (after you have created the uplink in the next session) let it send at least 15 payloads before you restart or cuts power on the device. For some reason (we are not sure why yet) the network sometimes buffers at least 12 payloads before it is received by MIC. If you are still not receiving anything, upload an run the sketch again.
+{{< note title="Important: First Run Notice" >}}
+The first time you run the sketch (after you have created the uplink in the next session) let it send at least 15 payloads before you restart or cut power on the device. For some reason (we are not sure why yet) the network sometimes buffers at least 12 payloads before it is received by MIC. If you are still not receiving anything, upload and run the sketch again.
 {{< /note >}}

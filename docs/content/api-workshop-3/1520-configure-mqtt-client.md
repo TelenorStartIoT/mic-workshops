@@ -44,11 +44,15 @@ main()
 
 ## Configure
 
-The first step is to find out the `IOT_ENDPOINT` and the `AWS_REGION`. These are configurations for our MQTT client, telling it which MQTT broker to use. You need to find the Manifest and extract `IotEndpoint` and `Region` from there.
+The first step is to find out the `IOT_ENDPOINT` and the `AWS_REGION`. These are configurations for our MQTT client, telling it which MQTT broker to use. You need to find the Manifest and extract `IotEndpointATS` and `Region` from there.
+
+{{< note title="IoT Endpoint with Amazon Trust Services (ATS)" >}}
+Be careful not to confuse **IotEndpoint** with **IotEndpointATS**, they are different. You can read more about it [here](https://aws.amazon.com/about-aws/whats-new/2018/08/aws-iot-core-adds-new-endpoints-serving-amazon-trust-services-signed-certificates-to-help-customers-avoid-symantec-distrust-issues/)
+{{< /note >}}
 
 Variable | Value
 --- | ---
-IOT_ENDPOINT | `(from Manifest) IotEndpoint`
+IOT_ENDPOINT | `(from Manifest) IotEndpointATS`
 AWS_REGION  | `(from Manifest) Region`
 USERNAME | `< your MIC username >`
 PASSWORD | `< your MIC password >`
@@ -56,7 +60,7 @@ PASSWORD | `< your MIC password >`
 Insert the values into your program:
 
 ```javascript
-const IOT_ENDPOINT = 'xxxxxxxxxxxxxx.iot.xx-xxxx-x.amazonaws.com'
+const IOT_ENDPOINT = 'xxxxxxxxxxxxxx-ats.iot.xx-xxxx-x.amazonaws.com'
 const AWS_REGION   = 'xx-xxxx-x'
 const USERNAME     = '< your MIC username >'
 const PASSWORD     = '< your MIC password >'
