@@ -9,7 +9,7 @@ menu:
 ---
 ## Developers first
 
-The Telenor Start IoT initiative has taken a **developer first** approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform used that we use in the Start IoT initiative. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information :-)
+The Telenor Start IoT initiative has taken a **developer first** approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform used that we use in the Start IoT initiative. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information :smiley:
 
 
 ## Telenor LTE architecture and NB-IoT
@@ -22,7 +22,7 @@ In the image above the PGW is where the traffic leaves the Telenor cellular netw
 If you use the open **telenor.iot** APN the traffic is not encrypted when it leaves the cellular network provided by Telenor. If you want a private APN you will have to make an agreeemnt with Telenor (and pay extra for it). With a private APN you will also have to host (or pay for the hosting of) a [RADIUS](https://en.wikipedia.org/wiki/RADIUS) server for authentication and authorisation of your devices. If you want the traffic to be encrypted you will also have to set up an IPSec VPN tunnel. In Norway, Telenor sells IPSec VPN tunnel branded as Telenor _MDA Go_ as part of a private APN offering.
 
 {{< note title="Start IoT offering" >}}
-When you use the Start IoT free of charge non-commercial offering all of this has been set up for you :-)
+When you use the Start IoT free of charge non-commercial offering all of this has been set up for you :bowtie:
 {{< /note >}}
 
 
