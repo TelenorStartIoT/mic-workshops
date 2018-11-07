@@ -48,7 +48,7 @@ Before continuing, make sure that:
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://telenorstartiot.github.io/mic-workshops/get-started/architectural-overview/</guid>
-      <description>Developers first The Telenor Start IoT initiative has taken a developer first approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information 😀
+      <description>Developers first The Telenor Start IoT initiative has taken a developer first approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform used that we use in the Start IoT initiative. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information :-)
 Telenor LTE architecture and NB-IoT If you just buy NB-IoT/Cat M1 SIM cards you will have to either use the open telenor.</description>
     </item>
     

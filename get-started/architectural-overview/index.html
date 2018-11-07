@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>NB-IoT Architectural Overview - Managed IoT Cloud Workshops</title>
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.50" />
 
     
     <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
@@ -371,7 +371,7 @@
 
 <h2 id="developers-first">Developers first</h2>
 
-<p>The <a href="https://startiot.telenor.com/">Telenor Start IoT</a> initiative has taken a <strong>developer first</strong> approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information 😀</p>
+<p>The Telenor Start IoT initiative has taken a <strong>developer first</strong> approach and has set up everything you need to get started with NB-IoT development and integrated it with the MIC platform used that we use in the Start IoT initiative. The next two paragraphs shows how this has been done. Feel free to skip reading it, it is just for your information :-)</p>
 
 <h2 id="telenor-lte-architecture-and-nb-iot">Telenor LTE architecture and NB-IoT</h2>
 
@@ -379,15 +379,15 @@
 
 <p><img src="https://telenorstartiot.github.io/mic-workshops/images/architectural-overview-00-cellular-architecture.png" alt="Simplified Telenor LTE infrastructure" title="The LTE cellular network architecture" /></p>
 
-<p>In the image above the PGW is where the traffic leaves the Telenor cellular network. This is where we (Telenor) can create named Access Points (APN&rsquo;s). UA (User Equipment) is your device and everythng between the <strong>UA</strong> and the <strong>CIoT service</strong> is Telenor LTE network components.</p>
+<p>In the image above the PGW is where the traffic leaves the Telenor cellular network. This is where we (Telenor) can create named Access Points (APN´s). UA (User Equipment) is your device and everythng between the <em>UA</em> and the <em>CIoT service</em> is Telenor LTE network components.</p>
 
-<p>If you use the open <strong>telenor.iot</strong> APN the traffic is not encrypted when it leaves the cellular network provided by Telenor. If you want a private APN you will have to make an agreement with Telenor (and pay extra for it). With a private APN you will also have to host (or pay for the hosting of) a <a href="https://en.wikipedia.org/wiki/RADIUS">RADIUS</a> server for authentication and authorisation of your devices. If you want the traffic to be encrypted you will also have to set up an IPSec VPN tunnel. In Norway, Telenor sells IPSec VPN tunnel branded as Telenor <strong>MDA Go</strong> as part of a private APN offering.</p>
+<p>If you use the open <strong>telenor.iot</strong> APN the traffic is not encrypted when it leaves the cellular network provided by Telenor. If you want a private APN you will have to make an agreeemnt with Telenor (and pay extra for it). With a private APN you will also have to host (or pay for the hosting of) a <a href="https://en.wikipedia.org/wiki/RADIUS">RADIUS</a> server for authentication and authorisation of your devices. If you want the traffic to be encrypted you will also have to set up an IPSec VPN tunnel. In Norway, Telenor sells IPSec VPN tunnel branded as Telenor <em>MDA Go</em> as part of a private APN offering.</p>
 
 <p>When you use the Start IoT free of charge non-commercial offering all of this has been set up for you.</p>
 
 <h2 id="horde-and-mic">Horde and MIC</h2>
 
-<p>The Horde platform component (including the Radius server) has been developed by <a href="https://exploratory.engineering/">Telenor Exploratory Engineering</a>. The Managed IoT Cloud platform has been developed by <a href="https://www.telenorconnexion.com/">Telenor Connexion</a>. Telenor Start IoT puts this together as the figure below shows for your benefit. Togehter, we believe this is a great starting point to experiment and learn about LPWAN based IoT.</p>
+<p>The Horde platform component  (including the Radius server) has been developed by Telenor Exploratory Engineering. The Managed IoT Cloud platform has been developed by Telenor Connexion. Telenor Start IoT puts this together as the figure below shows for your benefit. Togehter, we believe this is a great starting point to experiment and learn about LPWAN based IoT.</p>
 
 <p><img src="https://telenorstartiot.github.io/mic-workshops/images/architectural-overview-01-developer-architecture.png" alt="Telenor Start IoT NB-IoT developer architecture" title="The LTE cellular network architecture" /></p>
 

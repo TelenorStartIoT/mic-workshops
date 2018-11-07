@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=10" />
     <title>Configure MQTT Client - Managed IoT Cloud Workshops</title>
-    <meta name="generator" content="Hugo 0.40.1" />
+    <meta name="generator" content="Hugo 0.50" />
 
     
     <meta name="description" content="Easy to follow, step-by-step tutorials for the Telenor Managed IoT Cloud platform.">
@@ -418,12 +418,7 @@ main()
 
 <h2 id="configure">Configure</h2>
 
-<p>The first step is to find out the <code>IOT_ENDPOINT</code> and the <code>AWS_REGION</code>. These are configurations for our MQTT client, telling it which MQTT broker to use. You need to find the Manifest and extract <code>IotEndpointATS</code> and <code>Region</code> from there.</p>
-
-<div class="admonition note">
-<p class="admonition-title">IoT Endpoint with Amazon Trust Services (ATS)</p>
-<p>Be careful not to confuse <strong>IotEndpoint</strong> with <strong>IotEndpointATS</strong>, they are different. You can read more about it <a href="https://aws.amazon.com/about-aws/whats-new/2018/08/aws-iot-core-adds-new-endpoints-serving-amazon-trust-services-signed-certificates-to-help-customers-avoid-symantec-distrust-issues/">here</a></p>
-</div>
+<p>The first step is to find out the <code>IOT_ENDPOINT</code> and the <code>AWS_REGION</code>. These are configurations for our MQTT client, telling it which MQTT broker to use. You need to find the Manifest and extract <code>IotEndpoint</code> and <code>Region</code> from there.</p>
 
 <table>
 <thead>
@@ -436,7 +431,7 @@ main()
 <tbody>
 <tr>
 <td>IOT_ENDPOINT</td>
-<td><code>(from Manifest) IotEndpointATS</code></td>
+<td><code>(from Manifest) IotEndpoint</code></td>
 </tr>
 
 <tr>
@@ -458,7 +453,7 @@ main()
 
 <p>Insert the values into your program:</p>
 
-<pre><code class="language-javascript">const IOT_ENDPOINT = 'xxxxxxxxxxxxxx-ats.iot.xx-xxxx-x.amazonaws.com'
+<pre><code class="language-javascript">const IOT_ENDPOINT = 'xxxxxxxxxxxxxx.iot.xx-xxxx-x.amazonaws.com'
 const AWS_REGION   = 'xx-xxxx-x'
 const USERNAME     = '&lt; your MIC username &gt;'
 const PASSWORD     = '&lt; your MIC password &gt;'
