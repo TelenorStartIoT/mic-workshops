@@ -34,13 +34,13 @@ MIC provides an intuitive way to structure your IoT infrastructure. `Thing Types
 
 `Users` and `Thing Types` can be sorted under `domains`. Use `sub-domains` to create a domain-tree where users in differnet parts of the tree can be given different rights (roles).
 
-## Well defined REST API (and GraphQL)
-All functionality in MIC Core is exposed in a well defined REST API. You can find the documentation of the REST API here: [https://docs.telenorconnexion.com/mic/](https://docs.telenorconnexion.com/mic/). The API can be used to access all the functionality in the MIC Core and as an example, the MIC GUI (appBoard) uses these API´s in order to give you a full blown graphical user interface. You can use the API to create your custom GUI or to integrate MIC functionality in existing web based applications that you might have. Telenor Start IoT also offers a complete open source GUI that shows you how the API is used. In the near future MIC will also support [GraphQL](https://graphql.org/) support as an alternative to the REST API. GraphQL is a great tool if you want to create highly responsive GUI´s.
+## Well Defined REST API (and GraphQL)
+All functionality in the MIC Core is exposed in a well defined REST API. You can find the documentation of the REST API here: [https://docs.telenorconnexion.com/mic/](https://docs.telenorconnexion.com/mic/). The API can be used to access all the functionality in the MIC Core and as an example, the MIC GUI (App Board) uses these API's in order to give you a full blown graphical user interface. You can use the API to create your custom GUI or to integrate MIC functionality in existing web based applications that you might have. Telenor Start IoT also offers a complete open source GUI that shows you how the API is used. In the near future MIC will also support [GraphQL](https://graphql.org/) support as an alternative to the REST API. GraphQL is a great tool if you want to create highly responsive GUI's.
 
-## Security and scalability
+## Security and Scalability
 MIC has been designed with a security first mindset and building your IoT service on top of MIC gives you all you need to make sure that your IoT application is best in class related to security. MIC is designed with scalability in mind and utilizes stateless microservices (AWS Lambda), low cost and scalable storage (AWS S3) in order to ensure that your future scalability needs are met in a cost effective manner.
 
-## Focus on your business case
+## Focus on Your Business Case
 MIC allows you to focus on your use and business case. You can put all your effort into what matters for your service and the frontend(s) you want to expose to your end users.
 
 These are some of the features included in the Managed IoT Cloud suite. We hope you now got an overview of what's in store. Next we'll start by setting up an IoT device.

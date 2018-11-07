@@ -4,6 +4,8 @@ title = "Managed IoT Cloud Workshops"
 theme = "hugo-material-docs"
 metadataformat = "yaml"
 canonifyurls = true
+enableEmoji = true # Emoji cheat sheet: https://www.webpagefx.com/tools/emoji-cheat-sheet/
+
 # Enable Google Analytics by entering your tracking id
 googleAnalytics = ""
 publishDir="../public"
