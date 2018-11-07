@@ -371,7 +371,10 @@ void loop() {
 }
 </code></pre>
 
-<p>Open the serial monitor and type the following command to get the <a href="https://en.wikipedia.org/wiki/International_mobile_subscriber_identity"><code>IMSI</code></a> and <a href="https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity"><code>IMEI</code></a> numbers.</p>
+<p>Open the serial monitor and type the following command to get the <a href="https://en.wikipedia.org/wiki/International_mobile_subscriber_identity">IMSI</a> and <a href="https://en.wikipedia.org/wiki/International_Mobile_Equipment_Identity">IMEI</a> numbers:</p>
+
+<pre><code>AT+CIMI;+CGSN
+</code></pre>
 
 <p><img src="https://telenorstartiot.github.io/mic-workshops/images/arduino-mkr-nb-1500-08-at-serial.png" alt="AT commands to get IMSI and IMEI" title="AT commands to get IMSI and IMEI" /></p>
 
